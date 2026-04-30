@@ -240,6 +240,15 @@
     </script>
 
 <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+const btn = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".nav-links");
+
+btn.addEventListener("click", () => {
+  menu.classList.toggle("active");
+});
+</script>
     
 </body>
 
