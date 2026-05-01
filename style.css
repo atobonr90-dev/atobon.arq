@@ -1,3 +1,49 @@
+
+/* INICIO-------------------------------------------------------------------------------------------------------------------------- */
+
+/* Estilos Generales */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
+
+/* Navegación - Estilo Cristal */
+.header-main {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+}
+
+.header-container {
+  background: rgba(255, 255, 255, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 50px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.brand-logo img { height: 40px; }
+
+.nav-links { display: flex; list-style: none; gap: 25px; align-items: center; }
+.nav-links a { 
+  text-decoration: none; 
+  color: #1a1a1a; 
+  font-size: 13px; 
+  font-weight: 700; 
+  text-transform: uppercase; 
+}
+
+.nav-cta {
+  border: 1.5px solid #051C2E;
+  padding: 8px 20px;
+  border-radius: 25px;
+}
+
+/* Sección Video */
 .video-hero {
   position: relative;
   height: 100vh;
@@ -2483,6 +2529,7 @@ nav ul {
 
 
 /* ------------------------------------------CARRUSEL BOOTSTRAP-------------------------------------*/
+
 /* --- CARRUSEL LUXURY OPTIMIZADO --- */
 .carousel-image {
     height: 100vh; /* Altura completa en monitores */
@@ -2622,6 +2669,10 @@ nav ul {
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(193, 18, 31, 0.3);
 }
+
+
+
+
 
 
 
