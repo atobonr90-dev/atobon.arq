@@ -126,103 +126,127 @@
 </div>
    
   <!-------------------------------------- CARRUSEL ---------------------------------------------->
- <!-- CARRUSEL LUXURY - RESPONSIVE -->
-<div id="carouselLuxury" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
-    <div class="carousel-inner">
 
-        <div class="carousel-item active">
-            <div class="carousel-image" style="background-image: url('IMG/IMG/sala_comedor.jpg');">
-                <div class="carousel-overlay">
-                    <h2 class="display-4 fw-bold text-uppercase">Diseño Exclusivo</h2>
-                    <p class="lead">Espacios que reflejan elegancia y carácter.</p>
-                </div>
-            </div>
-        </div>
 
-        <div class="carousel-item">
-            <div class="carousel-image" style="background-image: url('IMG/IMG/casa_lujosa.jpg');">
-                <div class="carousel-overlay">
-                    <h2 class="display-4 fw-bold text-uppercase">Arquitectura Moderna</h2>
-                    <p class="lead">Proyectos que combinan estética y funcionalidad.</p>
-                </div>
-            </div>
-        </div>
+<div id="carouselProyectos" class="carousel slide"
+     data-bs-ride="carousel"
+     data-bs-interval="3500">
 
-        <div class="carousel-item">
-            <!-- Corregida la ruta de la imagen con espacios -->
-            <div class="carousel-image" style="background-image: url('IMG/IMG/1.\ FACHADA_2_1.png');">
-                <div class="carousel-overlay">
-                    <h2 class="display-4 fw-bold text-uppercase">Construcción Premium</h2>
-                    <p class="lead">Calidad y precisión en cada detalle.</p>
-                </div>
-            </div>
-        </div>
+  <!-- 🔵 PUNTOS -->
+  <div class="carousel-indicators">
 
+    <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="3"></button>
+    <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="4"></button>
+    <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="5"></button>
+    <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="6"></button>
+    <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="7"></button>
+
+  </div>
+
+  <div class="carousel-inner">
+
+    <!-- 1 -->
+    <div class="carousel-item active">
+      <img src="IMG/IMG/ingreso_casa.jpg" class="d-block w-100 carousel-img">
+
+      <div class="carousel-caption caption-bar">
+        <h2>Casa Moderna</h2>
+        <p>Diseño arquitectónico elegante</p>
+        <a href="IMG/IMG/casa_madera.jpg" class="btn btn-danger">Cotizar</a>
+      </div>
     </div>
+
+    <!-- 2 -->
+    <div class="carousel-item">
+      <img src="IMG/IMG/casa_madera.jpg" class="d-block w-100 carousel-img">
+      <div class="carousel-caption caption-bar">
+        <h2>Edificio Residencial</h2>
+        <a href="https://wa.me/57TU_NUMERO" class="btn btn-danger">Cotizar</a>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="carousel-item">
+      <img src="IMG/IMG/casa_l.jpg" class="d-block w-100 carousel-img">
+      <div class="carousel-caption caption-bar">
+        <h2>Interiores Premium</h2>
+        <a href="https://wa.me/57TU_NUMERO" class="btn btn-danger">Cotizar</a>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="carousel-item">
+      <img src="IMG/IMG/comedor_lujoso.jpg" class="d-block w-100 carousel-img">
+      <div class="carousel-caption caption-bar">
+        <h2>Proyecto Urbano</h2>
+        <a href="https://wa.me/57TU_NUMERO" class="btn btn-danger">Cotizar</a>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="carousel-item">
+      <img src="IMG/IMG/corredor.jpg" class="d-block w-100 carousel-img">
+      <div class="carousel-caption caption-bar">
+        <h2>Casa Campestre</h2>
+        <a href="https://wa.me/57TU_NUMERO" class="btn btn-danger">Cotizar</a>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="carousel-item">
+      <img src="IMG/IMG/casa_garaje.jpg" class="d-block w-100 carousel-img">
+      <div class="carousel-caption caption-bar">
+        <h2>Remodelación</h2>
+        <a href="https://wa.me/57TU_NUMERO" class="btn btn-danger">Cotizar</a>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="carousel-item">
+      <img src="IMG/IMG/casa_palma.jpg" class="d-block w-100 carousel-img">
+      <div class="carousel-caption caption-bar">
+        <h2>Diseño Interior</h2>
+        <a href="https://wa.me/57TU_NUMERO" class="btn btn-danger">Cotizar</a>
+      </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="carousel-item">
+      <img src="IMG/IMG/casa_piscina.jpg" class="d-block w-100 carousel-img">
+      <div class="carousel-caption caption-bar">
+        <h2>Proyecto Premium</h2>
+        <a href="https://wa.me/57TU_NUMERO" class="btn btn-danger">Cotizar</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ⬅️ ➡️ FLECHAS -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyectos" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselProyectos" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
 </div>
 
-<!-- SECCIÓN SERVICIOS ESPECIALIZADOS -->
-<section class="services-luxe-bg reveal">
-    <div class="services-intro text-center my-5">
-        <span class="luxury-subtitle d-block mb-2" style="letter-spacing: 5px; color: #b89b5e;">EXCLUSIVIDAD</span>
-        <h2 class="luxury-title display-5 fw-bold">Servicios Especializados</h2>
-    </div>
-
-    <!-- Contenedor Grid Arreglado -->
-    <div class="luxe-grid-bg">
-        
-        <!-- Servicio 01 -->
-        <a href="https://wa.me/573118354108" class="luxe-card-bg" target="_blank">
-            <div class="card-bg-img" style="background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop');"></div>
-            <div class="card-content">
-                <span class="luxe-number">01</span>
-                <h3>Diseño <br>Arquitectónico</h3>
-                <div class="luxe-btn">Consultar WhatsApp</div>
-            </div>
-        </a>
-
-        <!-- Servicio 02 -->
-        <a href="https://wa.me/573118354108" class="luxe-card-bg" target="_blank">
-            <div class="card-bg-img" style="background-image: url('IMG/IMG/CASA.jpg');"></div>
-            <div class="card-content">
-                <span class="luxe-number">02</span>
-                <h3>Construcción <br>& Obra</h3>
-                <div class="luxe-btn">Cotizar Obra</div>
-            </div>
-        </a>
-
-        <!-- Servicio 03 - Corregido "Interiores" -->
-        <a href="https://wa.me/573118354108" class="luxe-card-bg" target="_blank">
-            <div class="card-bg-img" style="background-image: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000&auto=format&fit=crop');"></div>
-            <div class="card-content">
-                <span class="luxe-number">03</span>
-                <h3>Diseño de <br> Interiores</h3>
-                <div class="luxe-btn">Diseñar Espacio</div>
-            </div>
-        </a>
-
-    </div>
-</section>
-
-<!-- SECCIÓN IMPACTO FINAL / CONTACTO -->
-<section class="final-impact reveal" id="contacto">
-    <!-- El fondo parallax ahora se controla mejor con esta clase -->
-    <div class="impact-bg-parallax" style="background-image: url('IMG/IMG/CASA.jpg');"></div>
-    <div class="impact-overlay"></div>
-    
-    <div class="impact-content text-center position-relative">
-        <span class="luxury-subtitle d-block mb-3" style="color: #b89b5e;">COLABORACIÓN</span>
-        <h2 class="luxury-title-white display-3 fw-bold text-white mb-4">Hagamos realidad <br>Tus Sueños.</h2>
-        <p class="impact-description lead text-white-50 mb-5">Desde el primer trazo hasta la entrega de llaves, garantizamos excelencia en cada detalle.</p>
-        <a href="https://wa.me/573118354108" class="impact-btn-gold px-5 py-3 text-decoration-none" target="_blank">Iniciar conversación →</a>
-    </div>
-</section>
 
 
 
 
 
-   <footer class="footer-luxury-dark">
+
+
+
+
+
+
+        <footer class="footer-luxury-dark">
     <div class="footer-texture-overlay"></div>
 
     <div class="container-footer">
@@ -296,8 +320,11 @@
     </a>
 </div>
 
-
-
+<div class="wa-float-container">
+    <a href="https://wa.me/573118354108" target="_blank" class="wa-main-btn">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M12.031 6.172c-2.277 0-4.156 1.886-4.156 4.192 0 .626.143 1.21.397 1.737L7.332 15l2.997-.881c.51.298 1.1.472 1.702.472 2.277 0 4.156-1.886 4.156-4.192 0-2.306-1.879-4.192-4.156-4.192zm2.147 5.927c-.092.257-.542.506-.75.545-.208.04-.413.063-.71-.035-.3-.098-.71-.241-1.25-.494-.46-.217-.85-.504-1.18-.85-.33-.346-.57-.753-.71-1.21-.14-.457-.1-.857.11-1.114.16-.195.34-.236.46-.236.12 0 .23 0 .33.01.11.01.25.013.38.33.14.34.47 1.156.51 1.235.04.08.06.173.01.27-.05.1-.11.205-.16.27-.06.066-.11.132-.16.19-.06.057-.12.12-.05.234.07.115.31.512.67.834.45.41.83.54 1.01.62.18.08.28.068.39-.057.11-.125.46-.534.59-.716.12-.18.25-.15.42-.086.17.064 1.08.51 1.27.6.19.09.31.14.36.21.05.07.05.41-.05.67zM12 2C6.477 2 2 6.477 2 12c0 1.891.528 3.654 1.45 5.16L2 22l4.98-1.394C8.428 21.516 10.136 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+    </a>
+</div>  
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
@@ -323,6 +350,8 @@ document.addEventListener("DOMContentLoaded", function() {
 </body>
 
 </html>
+
+
 
 
 
