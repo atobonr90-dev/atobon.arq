@@ -2,12 +2,24 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+  
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!-- ✅ Bootstrap CSS VA AQUÍ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Ana Tobón | Arquitectura & Construcción</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Montserrat:wght@300;700;800&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+     <link rel="stylesheet" href="estilos.css">
+     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   
 </head>
 <body>
+    <div class="container">
+   </div>
 
     <div id="progress-container">
         <div id="progress-bar"></div>
@@ -15,7 +27,7 @@
 <nav class="header-main">
     <div class="header-container">
         <div class="brand-logo">
-            <img src="SVG/LOGO ATOBON.svg" alt="TOBÓN">
+            <img src="IMG/IMG/logo_atobon.png" alt="TOBÓN">
         </div>
         
         <button class="menu-toggle" aria-label="Abrir menú">☰</button>
@@ -29,9 +41,10 @@
         </ul>
     </div>
 </nav>
-    <section class="contacto-luxe-gray" id="contacto">
+
+ <section class="contacto-luxe-gray" id="contacto">
     <div class="gray-overlay"></div>
-    
+
     <div class="container-signature">
         <div class="grid-signature">
             
@@ -193,14 +206,29 @@
 </div>
 
     
-</body>
 <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
+document.addEventListener("DOMContentLoaded", function() {
+    const btn = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".nav-links");
 
-    menuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
+    if (btn && menu) {
+        btn.onclick = function() {
+            menu.classList.toggle("active");
+            // Cambia el icono de ☰ a ✕
+            btn.innerHTML = menu.classList.contains("active") ? "✕" : "☰";
+        };
+
+        // Si hacen clic en un link, cerramos el menú automáticamente
+        document.querySelectorAll(".nav-links a").forEach(n => n.addEventListener("click", () => {
+            menu.classList.remove("active");
+            btn.innerHTML = "☰";
+        }));
+    }
+});
 </script>
+    
+</body>
+
 </html>
+
 
