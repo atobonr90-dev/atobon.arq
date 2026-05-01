@@ -13,6 +13,7 @@
      <link rel="stylesheet" href="estilos.css">
      <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
    
    
 </head>
@@ -129,96 +130,97 @@
 </div>
    
   <!-------------------------------------- CARRUSEL ---------------------------------------------->
-  <div id="carouselLuxury" 
-  class="carousel slide carousel-fade"
-     data-bs-ride="carousel"
-     data-bs-interval="3000"
-     data-bs-pause="false">
+ <!-- CARRUSEL LUXURY - RESPONSIVE -->
+<div id="carouselLuxury" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
+    <div class="carousel-inner">
 
-  <div class="carousel-inner">
-
-    <div class="carousel-item active">
-      <div class="carousel-image" style="background-image: url(IMG/IMG/sala_comedor.jpg);">
-        <div class="carousel-overlay">
-          <h2>Diseño Exclusivo</h2>
-          <p>Espacios que reflejan elegancia y carácter.</p>
+        <div class="carousel-item active">
+            <div class="carousel-image" style="background-image: url('IMG/IMG/sala_comedor.jpg');">
+                <div class="carousel-overlay">
+                    <h2 class="display-4 fw-bold text-uppercase">Diseño Exclusivo</h2>
+                    <p class="lead">Espacios que reflejan elegancia y carácter.</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-    <div class="carousel-item">
-      <div class="carousel-image" style="background-image: url(IMG/IMG/casa_lujosa.jpg);">
-        <div class="carousel-overlay">
-          <h2>Arquitectura Moderna</h2>
-          <p>Proyectos que combinan estética y funcionalidad.</p>
+        <div class="carousel-item">
+            <div class="carousel-image" style="background-image: url('IMG/IMG/casa_lujosa.jpg');">
+                <div class="carousel-overlay">
+                    <h2 class="display-4 fw-bold text-uppercase">Arquitectura Moderna</h2>
+                    <p class="lead">Proyectos que combinan estética y funcionalidad.</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-    <div class="carousel-item">
-      <div class="carousel-image" style="background-image: url(IMG/IMG/1.\ FACHADA_2_1.png);">
-        <div class="carousel-overlay">
-          <h2>Construcción Premium</h2>
-          <p>Calidad y precisión en cada detalle.</p>
+        <div class="carousel-item">
+            <!-- Corregida la ruta de la imagen con espacios -->
+            <div class="carousel-image" style="background-image: url('IMG/IMG/1.\ FACHADA_2_1.png');">
+                <div class="carousel-overlay">
+                    <h2 class="display-4 fw-bold text-uppercase">Construcción Premium</h2>
+                    <p class="lead">Calidad y precisión en cada detalle.</p>
+                </div>
+            </div>
         </div>
-      </div>
+
     </div>
-
-  </div>
-
 </div>
 
+<!-- SECCIÓN SERVICIOS ESPECIALIZADOS -->
+<section class="services-luxe-bg reveal">
+    <div class="services-intro text-center my-5">
+        <span class="luxury-subtitle d-block mb-2" style="letter-spacing: 5px; color: #b89b5e;">EXCLUSIVIDAD</span>
+        <h2 class="luxury-title display-5 fw-bold">Servicios Especializados</h2>
+    </div>
 
- <section class="services-luxe-bg reveal">
-        <div class="services-intro">
-            <span class="luxury-subtitle">EXCLUSIVIDAD</span>
-            <h2 class="luxury-title">Servicios Especializados</h2>
-        </div>
-        <div class="luxe-grid-bg">
-            <a href="https://wa.me/573118354108" class="luxe-card-bg" target="_blank">
-                <div class="card-bg-img" style="background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop');"></div>
-                <div class="card-content">
-                    <span class="luxe-number">01</span>
-                    <h3>Diseño <br>Arquitectónico</h3>
-                    <div class="luxe-btn">Consultar WhatsApp</div>
-                </div>
-            </a>
-            <a href="https://wa.me/573118354108" class="luxe-card-bg" target="_blank">
-                <div class="card-bg-img" style="background-image: url('IMG/IMG/CASA.jpg');"></div>
-                <div class="card-content">
-                    <span class="luxe-number">02</span>
-                    <h3>Construcción <br>& Obra</h3>
-                    <div class="luxe-btn">Cotizar Obra</div>
-                </div>
-            </a>
-            <a href="https://wa.me/573118354108" class="luxe-card-bg" target="_blank">
-                <div class="card-bg-img" style="background-image: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000&auto=format&fit=crop');"></div>
-                <div class="card-content">
-                    <span class="luxe-number">03</span>
-                    <h3>Diseño de <br> Inteiores</h3>
-                    <div class="luxe-btn">Diseñar Espacio</div>
-                </div>
-            </a>
-        </div>
-    </section>
+    <!-- Contenedor Grid Arreglado -->
+    <div class="luxe-grid-bg">
+        
+        <!-- Servicio 01 -->
+        <a href="https://wa.me/573118354108" class="luxe-card-bg" target="_blank">
+            <div class="card-bg-img" style="background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop');"></div>
+            <div class="card-content">
+                <span class="luxe-number">01</span>
+                <h3>Diseño <br>Arquitectónico</h3>
+                <div class="luxe-btn">Consultar WhatsApp</div>
+            </div>
+        </a>
 
-   
+        <!-- Servicio 02 -->
+        <a href="https://wa.me/573118354108" class="luxe-card-bg" target="_blank">
+            <div class="card-bg-img" style="background-image: url('IMG/IMG/CASA.jpg');"></div>
+            <div class="card-content">
+                <span class="luxe-number">02</span>
+                <h3>Construcción <br>& Obra</h3>
+                <div class="luxe-btn">Cotizar Obra</div>
+            </div>
+        </a>
 
+        <!-- Servicio 03 - Corregido "Interiores" -->
+        <a href="https://wa.me/573118354108" class="luxe-card-bg" target="_blank">
+            <div class="card-bg-img" style="background-image: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000&auto=format&fit=crop');"></div>
+            <div class="card-content">
+                <span class="luxe-number">03</span>
+                <h3>Diseño de <br> Interiores</h3>
+                <div class="luxe-btn">Diseñar Espacio</div>
+            </div>
+        </a>
 
-    <section class="final-impact reveal" id="contacto">
-    <div class="impact-bg-parallax" style="background-image: url(IMG/IMG/CASA.jpg);"></div>
-    <div class="impact-overlay"></div>
-    <div class="impact-content">
-        <span class="luxury-subtitle">COLABORACIÓN</span>
-        <h2 class="luxury-title-white">Hagamos realidad  <br>Tus Sueños.</h2>
-        <p class="impact-description">Desde el primer trazo hasta la entrega de llaves, garantizamos excelencia en cada detalle.</p>
-        <a href="https://wa.me/573118354108" class="impact-btn-gold" target="_blank">Iniciar conversación →</a>
     </div>
 </section>
 
-
-
-
+<!-- SECCIÓN IMPACTO FINAL / CONTACTO -->
+<section class="final-impact reveal" id="contacto">
+    <!-- El fondo parallax ahora se controla mejor con esta clase -->
+    <div class="impact-bg-parallax" style="background-image: url('IMG/IMG/CASA.jpg');"></div>
+    <div class="impact-overlay"></div>
+    
+    <div class="impact-content text-center position-relative">
+        <span class="luxury-subtitle d-block mb-3" style="color: #b89b5e;">COLABORACIÓN</span>
+        <h2 class="luxury-title-white display-3 fw-bold text-white mb-4">Hagamos realidad <br>Tus Sueños.</h2>
+        <p class="impact-description lead text-white-50 mb-5">Desde el primer trazo hasta la entrega de llaves, garantizamos excelencia en cada detalle.</p>
+        <a href="https://wa.me/573118354108" class="impact-btn-gold px-5 py-3 text-decoration-none" target="_blank">Iniciar conversación →</a>
+    </div>
+</section>
 
 
 
@@ -338,5 +340,6 @@ btn.addEventListener("click", () => {
 </body>
 
 </html>
+
 
 
