@@ -2622,3 +2622,30 @@ nav ul {
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(193, 18, 31, 0.3);
 }
+
+
+
+
+
+/* Quita el estilo de "enlace de internet viejo" */
+.nav-links a {
+    text-decoration: none !important;
+    color: #1a1a1a !important; /* El color de tu marca */
+}
+
+/* Regla de oro para móviles */
+@media (max-width: 991px) {
+    .nav-links {
+        display: none !important; /* Si esto no está, el menú se queda abierto como en tu foto */
+        position: absolute;
+        top: 60px; /* Ajusta según el alto de tu logo */
+        left: 0;
+        width: 100%;
+        background: white;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: block !important; /* Solo aparece al tocar la hamburguesa */
+    }
+}
