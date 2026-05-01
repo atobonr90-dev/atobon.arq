@@ -2626,6 +2626,93 @@ nav ul {
 
 
 
+/* FUERZA EL OCULTAMIENTO DEL MENÚ EN MÓVILES */
+@media (max-width: 991px) {
+    /* Estado inicial: Invisible y fuera del flujo */
+    .nav-links {
+        display: none !important; 
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        transition: opacity 0.3s ease;
+        z-index: 9999;
+    }
+
+    /* Estado activo: Visible cuando se hace clic */
+    .nav-links.active {
+        display: flex !important;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /* Ajuste para que el botón hamburguesa sea visible */
+    .menu-toggle {
+        display: block !important;
+        z-index: 10000;
+    }
+}
+
+/* En computadores (Escritorio) el menú siempre debe verse */
+@media (min-width: 992px) {
+    .nav-links {
+        display: flex !important;
+        visibility: visible;
+        opacity: 1;
+        position: static;
+    }
+    .menu-toggle {
+        display: none !important;
+    }
+}
+
+
+
+
+
+
+
+.carousel-img {
+    height: 80vh;
+    object-fit: cover;
+}
+
+/* TEXTO NORMAL */
+.custom-caption {
+    bottom: 20%;
+}
+
+/* 📱 CELULAR */
+@media (max-width: 768px) {
+
+    .carousel-img {
+        height: 55vh;
+    }
+
+    .custom-caption {
+        bottom: 10%;
+    }
+
+    .custom-caption h2 {
+        font-size: 18px;
+    }
+
+    .custom-caption p {
+        font-size: 12px;
+    }
+
+    .custom-caption .btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
+
+
+
 
 /* Quita el estilo de "enlace de internet viejo" */
 .nav-links a {
