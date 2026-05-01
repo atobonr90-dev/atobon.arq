@@ -2787,3 +2787,22 @@ nav ul {
         display: block !important; /* Solo aparece al tocar la hamburguesa */
     }
 }
+
+
+/* Esto arregla el desorden en el celular */
+@media (max-width: 991px) {
+    .header-main {
+        position: relative !important; /* Deja de flotar y permite ver el logo */
+        top: 0 !important;
+    }
+    
+    .header-container {
+        width: 100% !important;
+        border-radius: 0 !important; /* Quita las curvas en el móvil para que encaje */
+        padding: 10px !important;
+    }
+
+    .nav-links {
+        display: none; /* Oculta la lista azul que aparecía en tu primera foto */
+    }
+}
