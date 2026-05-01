@@ -2483,18 +2483,19 @@ nav ul {
 
 
 /* ------------------------------------------CARRUSEL BOOTSTRAP-------------------------------------*/
-
+/* --- CARRUSEL LUXURY OPTIMIZADO --- */
 .carousel-image {
-    height: 100vh;
+    height: 100vh; /* Altura completa en monitores */
     background-size: cover;
     background-position: center;
     position: relative;
+    width: 100%;
 }
 
 .carousel-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.2); /* más claro */
+    background: rgba(0, 0, 0, 0.3); /* Un toque más oscuro para legibilidad */
     color: white;
     display: flex;
     flex-direction: column;
@@ -2505,15 +2506,53 @@ nav ul {
 }
 
 .carousel-overlay h2 {
-    font-size: clamp(30px, 5vw, 60px);
+    font-family: 'Outfit', sans-serif; /* Tu tipografía de marca */
+    font-size: clamp(30px, 8vw, 70px); /* Ajuste fluido de tamaño */
     font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
 }
 
 .carousel-overlay p {
-    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(14px, 2vw, 20px);
     opacity: 0.9;
+    letter-spacing: 1px;
 }
 
+/* --- AJUSTES PARA MÓVIL (RESPONSIVE) --- */
+@media (max-width: 768px) {
+    .carousel-image {
+        height: 60vh; /* En celulares reducimos la altura para que se vea el resto de la web */
+    }
+    
+    .carousel-overlay {
+        padding: 15px;
+    }
+    
+    .carousel-overlay h2 {
+        letter-spacing: 2px; /* Menos espacio en pantallas pequeñas */
+    }
+}
+
+/* --- OTROS ELEMENTOS DE LA PÁGINA --- */
+.luxe-grid-bg {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Reorganiza solo las tarjetas */
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.final-impact {
+    position: relative;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
 
 
 /* ------------------------------------------PORQUE ELEGIRNOS BOOTSTRAP-------------------------------------*/
