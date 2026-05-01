@@ -15,7 +15,7 @@
 <nav class="header-main">
     <div class="header-container">
         <div class="brand-logo">
-            <img src="SVG/LOGO ATOBON.svg" alt="TOBÓN">
+            <img src="IMG/IMG/logo_atobon.png" alt="TOBÓN">
         </div>
         
         <button class="menu-toggle" aria-label="Abrir menú">☰</button>
@@ -218,13 +218,27 @@ responsabilidad y atención al detalle.
     </a>
 </div>  
 
-</body>
 <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
+document.addEventListener("DOMContentLoaded", function() {
+    const btn = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".nav-links");
 
-    menuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
+    if (btn && menu) {
+        btn.onclick = function() {
+            menu.classList.toggle("active");
+            // Cambia el icono de ☰ a ✕
+            btn.innerHTML = menu.classList.contains("active") ? "✕" : "☰";
+        };
+
+        // Si hacen clic en un link, cerramos el menú automáticamente
+        document.querySelectorAll(".nav-links a").forEach(n => n.addEventListener("click", () => {
+            menu.classList.remove("active");
+            btn.innerHTML = "☰";
+        }));
+    }
+});
 </script>
+    
+</body>
+
 </html>
