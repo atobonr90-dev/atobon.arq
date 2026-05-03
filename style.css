@@ -2674,9 +2674,6 @@ nav ul {
 
 
 
-
-
-
 /* FUERZA EL OCULTAMIENTO DEL MENÚ EN MÓVILES */
 @media (max-width: 991px) {
     /* Estado inicial: Invisible y fuera del flujo */
@@ -2725,84 +2722,198 @@ nav ul {
 
 
 
+/* --------------------------INICIO (CARRUSEL - TARJETAS DE LUJP - LLAMADO DE ATENCIÓN -------------------------------- */
+
+.hero-img {
+  height: 90vh;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  right: 10%;
+  background: rgba(0,0,0,0.5);
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-img {
+    height: 60vh;
+  }
+
+  .hero-overlay h1 {
+    font-size: 20px;
+  }
+}
+
+/* ------------------------FIN -------------------------------- */
 
 .carousel-img {
-    height: 80vh;
+    height: 70vh !important; /* Esto le da altura a la imagen */
+    width: 100%;
     object-fit: cover;
+    display: block !important;
 }
 
-/* TEXTO NORMAL */
-.custom-caption {
-    bottom: 20%;
+
+
+/* CARD LIMPIA */
+.project-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
-/* 📱 CELULAR */
+/* IMAGEN */
+.img-box img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* HOVER SUAVE */
+.project-card:hover .img-box img {
+  transform: scale(1.05);
+}
+
+/* TEXTO */
+.project-card .content {
+  padding: 18px;
+}
+
+/* LINK FINO */
+.link-luxury {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  position: relative;
+}
+
+/* LINEA ELEGANTE */
+.link-luxury::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background: #000;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  transition: 0.3s;
+}
+
+.link-luxury:hover::after {
+  width: 100%;
+}
+
+
+
+
+
+
+.carousel-img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* capa oscura elegante */
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+}
+
+/* texto */
+.caption-box {
+  bottom: 20%;
+}
+
+.caption-box h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/* responsive */
 @media (max-width: 768px) {
+  .carousel-img {
+    height: 60vh;
+  }
 
-    .carousel-img {
-        height: 55vh;
-    }
-
-    .custom-caption {
-        bottom: 10%;
-    }
-
-    .custom-caption h2 {
-        font-size: 18px;
-    }
-
-    .custom-caption p {
-        font-size: 12px;
-    }
-
-    .custom-caption .btn {
-        font-size: 12px;
-        padding: 6px 12px;
-    }
+  .caption-box h2 {
+    font-size: 20px;
+  }
 }
 
 
 
 
 
-/* Quita el estilo de "enlace de internet viejo" */
-.nav-links a {
-    text-decoration: none !important;
-    color: #1a1a1a !important; /* El color de tu marca */
+<section class="py-5 bg-light text-center">
+  <div class="container">
+
+    <h2 class="mb-5">Nuestros Servicios</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <h5>Diseño Arquitectónico</h5>
+        <p>Proyectos modernos y funcionales</p>
+      </div>
+
+      <div class="col-md-4">
+        <h5>Construcción</h5>
+        <p>Obras con calidad y cumplimiento</p>
+      </div>
+
+      <div class="col-md-4">
+        <h5>Remodelación</h5>
+        <p>Transformamos espacios existentes</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 
-/* Regla de oro para móviles */
-@media (max-width: 991px) {
-    .nav-links {
-        display: none !important; /* Si esto no está, el menú se queda abierto como en tu foto */
-        position: absolute;
-        top: 60px; /* Ajusta según el alto de tu logo */
-        left: 0;
-        width: 100%;
-        background: white;
-        z-index: 1000;
-    }
-
-    .nav-links.active {
-        display: block !important; /* Solo aparece al tocar la hamburguesa */
-    }
+p {
+  font-family: 'Outfit', sans-serif;
+  color: #555;
 }
 
+.btn {
+  border-radius: 30px;
+  padding: 6px 18px;
+  font-size: 13px;
+}
 
-/* Esto arregla el desorden en el celular */
-@media (max-width: 991px) {
-    .header-main {
-        position: relative !important; /* Deja de flotar y permite ver el logo */
-        top: 0 !important;
-    }
-    
-    .header-container {
-        width: 100% !important;
-        border-radius: 0 !important; /* Quita las curvas en el móvil para que encaje */
-        padding: 10px !important;
-    }
+.project-card .img-box img {
+    width: 100%;
+    height: 100%; /* O el alto que hayas definido */
+    object-fit: cover; /* 👈 Esto hace que la imagen llene el espacio sin estirarse */
+    object-position: center; /* Centra el render para que no se corte lo importante */
+    display: block;
+}
 
-    .nav-links {
-        display: none; /* Oculta la lista azul que aparecía en tu primera foto */
-    }
+/* También asegúrate de que el contenedor tenga un alto definido para que todas sean iguales */
+.project-card .img-box {
+    height: 300px; /* Ajusta este valor según qué tan altas quieras las tarjetas */
+    overflow: hidden;
+    border-radius: 8px; /* Para mantener ese toque elegante */
 }
