@@ -2903,17 +2903,27 @@ p {
   font-size: 13px;
 }
 
-.project-card .img-box img {
+
+
+
+/* Contenedor de la imagen */
+.project-card .img-box {
     width: 100%;
-    height: 100%; /* O el alto que hayas definido */
-    object-fit: cover; /* 👈 Esto hace que la imagen llene el espacio sin estirarse */
-    object-position: center; /* Centra el render para que no se corte lo importante */
-    display: block;
+    height: 450px; /* Altura fija para que las 3 sean IGUALES */
+    overflow: hidden; /* Corta lo que sobre de la imagen */
+    background-color: #f0f0f0; /* Color de fondo por si una imagen tarda en cargar */
 }
 
-/* También asegúrate de que el contenedor tenga un alto definido para que todas sean iguales */
-.project-card .img-box {
-    height: 300px; /* Ajusta este valor según qué tan altas quieras las tarjetas */
-    overflow: hidden;
-    border-radius: 8px; /* Para mantener ese toque elegante */
+/* La imagen dentro del contenedor */
+.project-card .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 👈 LA CLAVE: Llena el espacio sin estirarse (hace un zoom inteligente) */
+    object-position: center; /* Centra el render */
+    transition: transform 0.5s ease; /* Efecto suave para el hover */
+}
+
+/* Efecto elegante al pasar el mouse (opcional) */
+.project-card:hover .img-box img {
+    transform: scale(1.05); /* Un pequeño zoom de lujo */
 }
