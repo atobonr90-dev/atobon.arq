@@ -2,34 +2,31 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-  
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <!-- ✅ Bootstrap CSS VA AQUÍ -->
+    
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Ana Tobón | Arquitectura & Construcción</title>
+    <title>ATOBÓN | Arquitectura & Construcción</title>
+    
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Montserrat:wght@300;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=101">
+</head>
 
-   <link rel="stylesheet" href="style.css?v=100">
-    </head>
-  
-   
-   <body>
+<body>
 
-    <nav class="header-main">
+<nav class="header-main">
     <div class="header-container">
         <div class="brand-logo">
-           <img src="img/logo_atobon.png" alt="Ana Tobón">
+            <img src="img/logo_atobon.png" alt="ATOBÓN Arquitectura">
         </div>
         
-        <!-- El botón debe tener estas clases para que Bootstrap lo reconozca -->
         <button class="menu-toggle" type="button" aria-label="Abrir menú">
             ☰
         </button>
         
-        <!-- Esta es la lista que DEBE ocultarse -->
         <ul class="nav-links">
-                 <li><a href="index.html">Inicio</a></li> 
+            <li><a href="index.html">Inicio</a></li> 
             <li><a href="nosotros.html">Nosotros</a></li>
             <li><a href="proyectos.html">Proyectos</a></li>
             <li><a href="servicios.html">Servicios</a></li>
@@ -37,217 +34,151 @@
     </div>
 </nav>
 
-
-    
-
-    <section class="video-hero">
-        <div class="video-container">
-    <video autoplay muted loop playsinline class="video-fill">
-        <source src="MP4/video_de_inicio.mp4" type="video/mp4">
-    </video>
-            <div class="video-overlay"></div>
+<section class="video-hero">
+    <div class="video-container">
+        <video autoplay muted loop playsinline class="video-fill">
+            <source src="MP4/video_de_inicio.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+    <div class="hero-body">
+        <div class="hero-flex">
+            <h1 class="hero-number">01</h1>
+            <div class="hero-text">
+                <span class="hero-tagline">“Creamos espacios funcionales, <br> elegantes y adaptados a cada necesidad.”</span>
+                <h2 class="hero-title">DISEÑO <br>ARQUITECTURA <span>CONSTRUCCIÓN.</span></h2>
+                <a href="https://wa.me/573118354108" class="atobon-btn-pill">Solicitar Cotización <span>↓</span></a>
+            </div>
         </div>
-        <div class="hero-body">
-            <div class="hero-flex">
-                <h1 class="hero-number">01</h1>
-                <div class="hero-text">
-                    <span class="hero-tagline">“Creamos espacios funcionales, <br> elegantes y adaptados a cada necesidad.”</span>
-                    <h2 class="hero-title">DISEÑO <br>ARQUITECTURA <span>CONSTRUCCIÓN.</span></h2>
-                    <a href="#" class="atobon-btn-pill">Solicitar Cotización <span>↓</span></a>
+    </div>
+</section>
+
+<!-- LLAMADO DE ATENCIÓN -->
+<section class="py-5 text-center bg-white text-black">
+    <div class="container">
+        <h2 class="mb-3 fw-bold">¿Tienes un proyecto en mente?</h2>
+        <p class="mb-4">Especialistas en diseño de alto nivel y ejecución técnica.</p>
+        <a href="https://wa.me/573118354108" class="atobon-btn-pill">Diseñemos espacios únicos</a>
+    </div>
+</section>
+
+<!-- PORTAFOLIO SECCIÓN MISTA -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <img src="img/luxury.webp" alt="Arquitectura Minimalista" class="img-fluid rounded shadow-sm">
+            </div>
+            <div class="col-md-6 ps-md-5">
+                <h2 class="fw-bold">Diseño, calidad y elegancia</h2>
+                <p class="text-muted">
+                    Combinamos la precisión técnica del BIM con una estética contemporánea para entregar proyectos que trascienden lo convencional.
+                </p>
+                <a href="nosotros.html" class="atobon-btn-pill">Conocer más →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TARJETAS DE PROYECTOS -->
+<section class="py-5 bg-white">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Proyectos Recientes</h2>
+            <p class="text-muted">Explora nuestra visión arquitectónica</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="project-card">
+                    <div class="img-box"><img src="img/casa.webp" alt="Casa Moderna"></div>
+                    <div class="content">
+                        <h5>Residencial</h5>
+                        <a href="proyectos.html" class="link-luxury">Ver detalles →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="project-card">
+                    <div class="img-box"><img src="img/ingreso_casa.webp" alt="Edificio Contemporáneo"></div>
+                    <div class="content">
+                        <h5>Edificaciones</h5>
+                        <a href="proyectos.html" class="link-luxury">Ver detalles →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="project-card">
+                    <div class="img-box"><img src="img/corredor.webp" alt="Interiorismo"></div>
+                    <div class="content">
+                        <h5>Interiorismo</h5>
+                        <a href="proyectos.html" class="link-luxury">Ver detalles →</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-
-
-
-  <!-------------------------------------- LLAMADO DE ATENCIÓN ---------------------------------------------->
-    <section class="py-5 text-center bg-white text-black">
-  <div class="container">
-
-    <h2 class="mb-3">¿Tienes un proyecto en mente?</h2>
-    <p class="mb-4">Creamos espacios únicos y elegantes</p>
-
-     <a href="https://wa.me/57TU_NUMERO" class="atobon-btn-pill">Diseñamos espacios unicos</a>
-    </a>
-
-  </div>
+    </div>
 </section>
 
-
-
- <!-------------------------------------- PORTAFOLIO  ---------------------------------------------->
-<section class="py-5 bg-light">
-  <div class="container">
-
-    <div class="row align-items-center">
-      
-      <div class="col-md-6">
-        <img src="img/luxury.webp" class="img-fluid rounded">
-      </div>
-
-      <div class="col-md-6">
-        <h2>Diseño, calidad y elegancia</h2>
-        <p>
-          Creamos espacios arquitectónicos modernos, funcionales y únicos,
-          combinando diseño y construcción con altos estándares.
-        </p>
-
-        <a href="nosotros.html" class="atobon-btn-pill">
-          Conocer más →
-        </a>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-  <!-------------------------------------- TARJETAS---------------------------------------------->
-<section class="py-5 bg-white">
-  <div class="container">
-
-    <div class="text-center mb-5">
-      <h2 class="fw-semibold">Proyectos</h2>
-      <p class="text-muted">Diseño arquitectónico contemporáneo</p>
-    </div>
-
-    <div class="row g-4">
-
-      <!-- CARD -->
-      <div class="col-md-4">
-        <div class="project-card">
-          <div class="img-box">
-            <img src="img/casa.webp">
-          </div>
-          <div class="content">
-            <h5>Casa Moderna</h5>
-            <a href="proyectos.html" class="link-luxury">Ver proyectos →</a>
-          </div>
-        </div>
-      </div>
-
-      
-
-      <!-- CARD -->
-      <div class="col-md-4">
-        <div class="project-card">
-          <div class="img-box">
-            <img src="img/ingreso_casa.webp" alt="">
-          </div>
-          <div class="content">
-            <h5>Edificio</h5>
-            <a href="proyectos.html" class="link-luxury">Ver proyectos →</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- CARD -->
-      <div class="col-md-4">
-        <div class="project-card">
-          <div class="img-box">
-            <img src="img/corredor.webp"">
-          </div>
-          <div class="content">
-            <h5>Interiores</h5>
-            <a href="proyectos.html" class="link-luxury">Ver proyectos →</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-      <!-------------------------------------- CARRUSEL ---------------------------------------------->
+<!-- CARRUSEL -->
 <section>
+    <div id="carouselProyectos" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="2"></button>
+        </div>
 
-<div id="carouselProyectos" class="carousel slide carousel-fade"
-     data-bs-ride="carousel"
-     data-bs-interval="3000"
-     data-bs-pause="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/sala_sofa.jpg" class="d-block w-100 carousel-img" alt="Arquitectura">
+                <div class="carousel-caption text-start caption-box">
+                    <h2>Arquitectura</h2>
+                    <a href="https://wa.me/573118354108" class="btn btn-light btn-sm">Solicitar asesoría →</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/diseño.webp" class="d-block w-100 carousel-img" alt="Diseño">
+                <div class="carousel-caption text-start caption-box">
+                    <h2>Diseño Interior</h2>
+                    <a href="https://wa.me/573118354108" class="btn btn-light btn-sm">Ver portafolio →</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/obra.webp" class="d-block w-100 carousel-img" alt="Construcción">
+                <div class="carousel-caption text-start caption-box">
+                    <h2>Construcción</h2>
+                    <a href="https://wa.me/573118354108" class="btn btn-light btn-sm">Ver proceso de obra →</a>
+                </div>
+            </div>
+        </div>
 
-  <!-- 🔵 INDICADORES -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="0" class="active"></button>
-    <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="1"></button>
-    <button type="button" data-bs-target="#carouselProyectos" data-bs-slide-to="2"></button>
-  </div>
-
-  <!-- 🔥 IMÁGENES -->
-  <div class="carousel-inner">
-
-     <div class="carousel-item">
-      <img src="img/diseño.webp" class="d-block w-100 carousel-img">
-      <div class="carousel-caption text-start caption-box">
-        <h2>Diseño</h2>
-        <a href="https://wa.me/573118354108" class="btn btn-light btn-sm">Diseñemos tu proyecto →</a>
-      </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyectos" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProyectos" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
     </div>
-
-    <div class="carousel-item active">
-      <img src="img/sala_sofa.jpg" class="d-block w-100 carousel-img">
-      <div class="carousel-caption text-start caption-box">
-        <h2>Arquitectura</h2>
-        <a href="https://wa.me/573118354108" class="btn btn-light btn-sm">Solicitar asesoría →</a>
-      </div>
-    </div>
-
-   
-    <div class="carousel-item">
-      <img src="img/obra.webp" class="d-block w-100 carousel-img">
-      <div class="carousel-caption text-start caption-box">
-        <h2>Construcción</h2>
-        <a href="https://wa.me/573118354108" class="btn btn-light btn-sm">Ver proyecto →</a>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- ⬅️➡️ FLECHAS -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyectos" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselProyectos" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-
-</div>
-
 </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-        <footer class="footer-luxury-dark">
+<footer class="footer-luxury-dark">
     <div class="footer-texture-overlay"></div>
-
     <div class="container-footer">
         <div class="footer-top-row">
             <div class="footer-brand-info">
-                <img src="IMG/IMG/logo_atobon.png"Ana Tobón" class="footer-logo-premium">
-                <p class="footer-slogan">Diseño - Arquitectura - Construcción</p>
+                <img src="IMG/IMG/logo_atobon.png" alt="Ana Tobón Logo" class="footer-logo-premium">
+                <p class="footer-slogan">Diseño • Arquitectura • Construcción</p>
             </div>
             <div class="footer-trust-badges">
-    <span class="tiny-label-bold">RESPALDO Y MEDIOS DE PAGO</span>
-  <div class="badge-grid-visible">
-    <img src="SVG/bbva.svg" alt="Visa" class="badge-icon">
-    <img src="SVG/nequi.svg" alt="Mastercard" class="badge-icon">
-    <img src="SVG/banco_occidente.svg" alt="Banco Occidente" class="badge-icon">
-    <img src="SVG/daviplata.svg" alt="Bancolombia" class="badge-icon">
-</div>
-</div>
+                <span class="tiny-label-bold">MÉTODOS DE PAGO Y RESPALDO</span>
+                <div class="badge-grid-visible">
+                    <img src="SVG/bbva.svg" alt="BBVA" class="badge-icon">
+                    <img src="SVG/nequi.svg" alt="Nequi" class="badge-icon">
+                    <img src="SVG/banco_occidente.svg" alt="Banco de Occidente" class="badge-icon">
+                    <img src="SVG/daviplata.svg" alt="Daviplata" class="badge-icon">
+                </div>
+            </div>
         </div>
 
         <div class="footer-main-separator"></div>
@@ -262,53 +193,48 @@
                     <a href="contacto.html">Agendar Cita</a>
                 </nav>
             </div>
-
             <div class="f-col">
                 <h3>Legal</h3>
                 <nav>
-                    <a href="#">Términos y Condiciones</a>
-                    <a href="#">Privacidad de Datos</a>
+                    <a href="#">Privacidad</a>
+                    <a href="#">Términos</a>
                     <a href="#">Ética Profesional</a>
                 </nav>
             </div>
-
             <div class="f-col">
                 <h3>Conecta</h3>
                 <div class="social-pills">
                     <a href="#" class="social-link">Instagram</a>
                     <a href="#" class="social-link">LinkedIn</a>
-                    <a href="#" class="social-link">WhatsApp</a>
+                    <a href="https://wa.me/573118354108" class="social-link">WhatsApp</a>
                 </div>
             </div>
-
             <div class="f-col f-newsletter">
                 <h3>Newsletter</h3>
-                <p>Recibe los últimos renders y avances de obra en tu correo.</p>
+                <p>Recibe los últimos renders y avances de obra.</p>
                 <form class="luxury-form">
-                    <input type="email" placeholder="Email institucional">
+                    <input type="email" placeholder="Email institucional" required>
                     <button type="submit">Suscripción →</button>
                 </form>
             </div>
         </div>
 
-        <div class="footer-copyright">
+        <div class="footer-copyright text-center">
             <div class="copy-line"></div>
-            <p>© 2026 ANA TOBÓN Arquitectura & Construcción. Todos los derechos reservados.</p>
+            <p>© 2026 ANAMARIA TOBÓN. Todos los derechos reservados.</p>
         </div>
     </div>
 </footer>
 
+<!-- Botón Flotante WhatsApp -->
 <div class="wa-float-container">
-    <a href="https://wa.me/573118354108" target="_blank" class="wa-main-btn">
+    <a href="https://wa.me/573118354108" target="_blank" class="wa-main-btn" aria-label="Chat on WhatsApp">
         <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M12.031 6.172c-2.277 0-4.156 1.886-4.156 4.192 0 .626.143 1.21.397 1.737L7.332 15l2.997-.881c.51.298 1.1.472 1.702.472 2.277 0 4.156-1.886 4.156-4.192 0-2.306-1.879-4.192-4.156-4.192zm2.147 5.927c-.092.257-.542.506-.75.545-.208.04-.413.063-.71-.035-.3-.098-.71-.241-1.25-.494-.46-.217-.85-.504-1.18-.85-.33-.346-.57-.753-.71-1.21-.14-.457-.1-.857.11-1.114.16-.195.34-.236.46-.236.12 0 .23 0 .33.01.11.01.25.013.38.33.14.34.47 1.156.51 1.235.04.08.06.173.01.27-.05.1-.11.205-.16.27-.06.066-.11.132-.16.19-.06.057-.12.12-.05.234.07.115.31.512.67.834.45.41.83.54 1.01.62.18.08.28.068.39-.057.11-.125.46-.534.59-.716.12-.18.25-.15.42-.086.17.064 1.08.51 1.27.6.19.09.31.14.36.21.05.07.05.41-.05.67zM12 2C6.477 2 2 6.477 2 12c0 1.891.528 3.654 1.45 5.16L2 22l4.98-1.394C8.428 21.516 10.136 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
     </a>
 </div>
 
-<div class="wa-float-container">
-    <a href="https://wa.me/573118354108" target="_blank" class="wa-main-btn">
-        <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M12.031 6.172c-2.277 0-4.156 1.886-4.156 4.192 0 .626.143 1.21.397 1.737L7.332 15l2.997-.881c.51.298 1.1.472 1.702.472 2.277 0 4.156-1.886 4.156-4.192 0-2.306-1.879-4.192-4.156-4.192zm2.147 5.927c-.092.257-.542.506-.75.545-.208.04-.413.063-.71-.035-.3-.098-.71-.241-1.25-.494-.46-.217-.85-.504-1.18-.85-.33-.346-.57-.753-.71-1.21-.14-.457-.1-.857.11-1.114.16-.195.34-.236.46-.236.12 0 .23 0 .33.01.11.01.25.013.38.33.14.34.47 1.156.51 1.235.04.08.06.173.01.27-.05.1-.11.205-.16.27-.06.066-.11.132-.16.19-.06.057-.12.12-.05.234.07.115.31.512.67.834.45.41.83.54 1.01.62.18.08.28.068.39-.057.11-.125.46-.534.59-.716.12-.18.25-.15.42-.086.17.064 1.08.51 1.27.6.19.09.31.14.36.21.05.07.05.41-.05.67zM12 2C6.477 2 2 6.477 2 12c0 1.891.528 3.654 1.45 5.16L2 22l4.98-1.394C8.428 21.516 10.136 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
-    </a>
-</div>  
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
@@ -318,11 +244,9 @@ document.addEventListener("DOMContentLoaded", function() {
     if (btn && menu) {
         btn.onclick = function() {
             menu.classList.toggle("active");
-            // Cambia el icono de ☰ a ✕
             btn.innerHTML = menu.classList.contains("active") ? "✕" : "☰";
         };
 
-        // Si hacen clic en un link, cerramos el menú automáticamente
         document.querySelectorAll(".nav-links a").forEach(n => n.addEventListener("click", () => {
             menu.classList.remove("active");
             btn.innerHTML = "☰";
@@ -330,9 +254,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 </script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     
 </body>
-
 </html>
