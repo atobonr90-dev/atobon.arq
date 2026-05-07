@@ -3,434 +3,264 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>ATOBÓN | Arquitectura & Construcción</title>
-    
-    <!-- Fuentes -->
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Montserrat:wght@300;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=102">
+
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+     <!-- BOOTSTRAP CSS (IMPORTANTE PARA CARRUSEL) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+
+
+   
 </head>
 
 <body>
 
-<nav class="header-main">
-    <div class="header-container">
-        <div class="brand-logo">
-            <img src="img/logo_atobon.png" alt="ATOBÓN">
-        </div>
+<!------------------------------------------- NAV ------------------------------------------------------------------->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="#" class="logo-link">
+            <img src="img/logo_atobon.png" alt="ATOBÓN" class="logo-img">
+        </a>
         
-        <button class="menu-toggle" type="button" aria-label="Abrir menú">
-            ☰
-        </button>
+        <input type="checkbox" id="nav-check">
+        <label for="nav-check" class="nav-btn">
+            <span></span>
+            <span></span>
+        </label>
         
         <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li> 
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="proyectos.html">Proyectos</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="nosotros.html">NOSOTROS</a></li>
+            <li><a href="servicios.html">SERVICIOS</a></li>
+             <li><a href="proyectos.html">PROYECTOS</a></li>
+            <li><a href="contacto.html"btn-contacto">CONTACTO</a></li>
         </ul>
     </div>
 </nav>
 
-<section class="video-hero">
-    <div class="video-container">
-        <video autoplay muted loop playsinline class="video-fill">
-            <source src="mp4/video_de_inicio.mp4" type="video/mp4">
-        </video>
-        <div class="video-overlay"></div>
-    </div>
-    <div class="hero-body">
-        <div class="hero-flex">
-            <h1 class="hero-number">01</h1>
-            <div class="hero-text">
-                <span class="hero-tagline">Diseño espacios que combinan <br> Estética, confort y eficiencia.</span>
-                <h2 class="hero-title">DISEÑO <br>ARQUITECTURA <span>CONSTRUCCIÓN.</span></h2>
-                <a href="https://wa.me/573118354108" class="atobon-btn-pill">Solicitar Cotización <span>↓</span></a>
-            </div>
-        </div>
+<!------------------------------------------------------------- HERO -------------------------------------------------------->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Diseño - Arquitectura - Construcción</h1>
+        <p>Moderna, elegante y funcional (Villavicencio, Meta)</p>
+        
+        
+        <a href="https://wa.link/9qjmje" class="btn-rojo">Ver proyectos</a>
     </div>
 </section>
 
-<!-- LLAMADO DE ATENCIÓN -->
-<section class="py-5 text-center bg-white text-black">
-    <div class="container">
-        <h2 class="mb-3">¿Tienes un proyecto en mente?</h2>
-        <p class="mb-4">Desde la concepción estructural hasta el detalle interior, diseñamos espacios  
-          que equilibran funcionalidad y lujo. <br> Cada proyecto es una respuesta única a las necesidades de habitabilidad y el entorno natural</p>
-        <a href="https://wa.me/573118354108" class="atobon-btn-pill">Diseñamos espacios únicos</a>
-    </div>
-</section>
+<!--------------------------------------------------- PORQUE ELEGIRNOS ------------------------------------------------------->
+<section class="porque">
+    <h2>¿POR QUÉ ELEGIRNOS?</h2>
 
+    <div class="porque-grid">
 
-<!-- SERVICIOS -->
-<section class="py-5 bg-light">
-  <div class="container">
-    
-    <div class="text-center mb-5">
-      <h2 class="fw-bold">Servicios</h2>
-      <p class="text-muted">Soluciones arquitectónicas pensadas para cada proyecto</p>
-    </div>
-
-    <div class="row g-4">
-
-      <!-- Diseño arquitectónico -->
-      <div class="col-md-6 col-lg-3">
-        <a href="https://wa.me/573001234567?text=Hola,%20quiero%20información%20sobre%20diseño%20arquitectónico"
-           target="_blank"
-           class="service-link d-block h-100">
-
-          <div class="card h-100 border-0 shadow-sm service-card text-center p-4">
-            <div class="overlay">Consultar por WhatsApp</div>
-            <i class="bi bi-building fs-1 mb-3 icon"></i>
-            <h5 class="fw-bold">Diseño arquitectónico</h5>
-            <p class="text-muted small">
-              Desarrollo de proyectos personalizados, funcionales y adaptados al entorno.
-            </p>
-          </div>
-
-        </a>
-      </div>
-
-      <!-- Remodelaciones -->
-      <div class="col-md-6 col-lg-3">
-        <a href="https://wa.me/573001234567?text=Hola,%20quiero%20información%20sobre%20remodelaciones"
-           target="_blank"
-           class="service-link d-block h-100">
-
-          <div class="card h-100 border-0 shadow-sm service-card text-center p-4">
-            <div class="overlay">Consultar por WhatsApp</div>
-            <i class="bi bi-hammer fs-1 mb-3 icon"></i>
-            <h5 class="fw-bold">Remodelaciones</h5>
-            <p class="text-muted small">
-              Transformación de espacios existentes para mejorar estética y funcionalidad.
-            </p>
-          </div>
-
-        </a>
-      </div>
-
-      <!-- Planos y licencias -->
-      <div class="col-md-6 col-lg-3">
-        <a href="https://wa.me/573001234567?text=Hola,%20quiero%20información%20sobre%20planos%20y%20licencias"
-           target="_blank"
-           class="service-link d-block h-100">
-
-          <div class="card h-100 border-0 shadow-sm service-card text-center p-4">
-            <div class="overlay">Consultar por WhatsApp</div>
-            <i class="bi bi-file-earmark-text fs-1 mb-3 icon"></i>
-            <h5 class="fw-bold">Planos y licencias</h5>
-            <p class="text-muted small">
-              Elaboración de planos técnicos y gestión de permisos de construcción.
-            </p>
-          </div>
-
-        </a>
-      </div>
-
-      <!-- Visualización 3D -->
-      <div class="col-md-6 col-lg-3">
-        <a href="https://wa.me/573001234567?text=Hola,%20quiero%20información%20sobre%20visualización%203D"
-           target="_blank"
-           class="service-link d-block h-100">
-
-          <div class="card h-100 border-0 shadow-sm service-card text-center p-4">
-            <div class="overlay">Consultar por WhatsApp</div>
-            <i class="bi bi-box fs-1 mb-3 icon"></i>
-            <h5 class="fw-bold">Visualización 3D</h5>
-            <p class="text-muted small">
-              Representaciones realistas para visualizar el proyecto antes de construir.
-            </p>
-          </div>
-
-        </a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- PROCESO -->
-<!-- PROCESO -->
-<section class="py-5 proceso-timeline fondo-arq">
-  <div class="container">
-
-    <h2 class="fw-bold text-center mb-5">
-      De la idea al espacio construido
-    </h2>
-
-    <div class="timeline">
-
-      <!-- Paso 1 -->
-      <div class="timeline-item left">
-        <div class="content">
-          <a href="https://wa.me/573001234567" target="_blank" class="timeline-link">
-            <i class="bi bi-lightbulb"></i>
-            <h6 class="titulo">Idea</h6>
-            <p>Entendemos el proyecto, necesidades y contexto.</p>
-          </a>
-        </div>
-      </div>
-
-      <!-- Paso 2 -->
-      <div class="timeline-item right">
-        <div class="content">
-          <a href="https://wa.me/573001234567" target="_blank" class="timeline-link">
+        <a href="diseno.html" class="item">
             <i class="bi bi-pencil-square"></i>
-            <h6 class="titulo">Diseño</h6>
-            <p>Propuesta funcional, estética y adaptada.</p>
-          </a>
-        </div>
-      </div>
+            <h3>Diseño exclusivo</h3>
+            <p>Cada proyecto es único, pensado para tu estilo.</p>
+        </a>
 
-      <!-- Paso 3 -->
-      <div class="timeline-item left">
-        <div class="content">
-          <a href="https://wa.me/573001234567" target="_blank" class="timeline-link">
-            <i class="bi bi-rulers"></i>
-            <h6 class="titulo">Desarrollo</h6>
-            <p>Planos técnicos y visualización 3D.</p>
-          </a>
-        </div>
-      </div>
+        <a href="calidad.html" class="item">
+            <i class="bi bi-award"></i>
+            <h3>Alta calidad</h3>
+            <p>Materiales y ejecución con estándares profesionales.</p>
+        </a>
 
-      <!-- Paso 4 -->
-      <div class="timeline-item right">
-        <div class="content">
-          <a href="https://wa.me/573001234567" target="_blank" class="timeline-link">
-            <i class="bi bi-check2-circle"></i>
-            <h6 class="titulo">Entrega</h6>
-            <p>Acompañamiento hasta la ejecución del proyecto.</p>
-          </a>
-        </div>
-      </div>
+        <a href="experiencia.html" class="item">
+            <i class="bi bi-building"></i>
+            <h3>Experiencia</h3>
+            <p>Trayectoria en proyectos funcionales y elegantes.</p>
+        </a>
+
+        <a href="proceso.html" class="item">
+            <i class="bi bi-people"></i>
+            <h3>Acompañamiento</h3>
+            <p>Te guiamos desde el inicio hasta la entrega.</p>
+        </a>
 
     </div>
-
-  </div>
 </section>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
-<!------------------------------- PROYECTOS DESTACADOS -------------------------------------->
-<section class="py-5">
-  <div class="container">
+<!--------------------------------------------------- PROYECTOS ------------------------------------------------------->
+<section class="proyectos">
+    <h2>PROYECTOS</h2>
 
-    <div class="text-center mb-5">
-      <h2 class="fw-bold">Proyectos</h2>
-      <p class="text-muted">Una selección de trabajos recientes</p>
+    <div class="grid-proyectos">
+        <a href="https://wa.me/573118354108?text=Hola,%20quiero%20pagar%20por%20Nequi" class="proyecto">
+            <img src="img/comedor_lujoso.webp" alt="">
+            <div class="overlay">
+                <h3>Casa Moderna</h3>
+            </div>
+        </a>
+
+        <a href="https://wa.me/573118354108?text=Hola,%20quiero%20pagar%20por%20Nequi" class="proyecto">
+            <img src="img/ingreso_casa.webp" alt="">
+            <div class="overlay">
+                <h3>Interiorismo</h3>
+            </div>
+        </a>
+
+        <a href="https://wa.me/573118354108?text=Hola,%20quiero%20pagar%20por%20Nequi" class="proyecto">
+            <img src="img/diseño_arquitectonico.jpg" alt="">
+            <div class="overlay">
+                <h3>Diseño Residencial</h3>
+            </div>
+        </a>
     </div>
-
-    <div class="row g-4">
-
-      <!-- Proyecto 1 -->
-      <div class="col-md-6 col-lg-4">
-        <a href="https://wa.me/573001234567?text=Hola,%20quiero%20información%20sobre%20Casa%20Campestre"
-           target="_blank"
-           class="project-link d-block">
-
-          <div class="project-card">
-            <img src="img/comedor_lujoso.webp" class="img-fluid" alt="Proyecto 1">
-
-            <div class="project-overlay">
-              <div class="project-info">
-                <h5>Casa Campestre</h5>
-                <span>Villavicencio</span>
-              </div>
-            </div>
-          </div>
-
-        </a>
-      </div>
-
-      <!-- Proyecto 2 -->
-      <div class="col-md-6 col-lg-4">
-        <a href="https://wa.me/573001234567?text=Hola,%20quiero%20información%20sobre%20Vivienda%20Urbana"
-           target="_blank"
-           class="project-link d-block">
-
-          <div class="project-card">
-            <img src="img/escaleras.jpg" class="img-fluid" alt="Proyecto 2">
-
-            <div class="project-overlay">
-              <div class="project-info">
-                <h5>Vivienda Urbana</h5>
-                <span>Diseño moderno</span>
-              </div>
-            </div>
-          </div>
-
-        </a>
-      </div>
-
-      <!-- Proyecto 3 -->
-      <div class="col-md-6 col-lg-4">
-        <a href="https://wa.me/573001234567?text=Hola,%20quiero%20información%20sobre%20Remodelación"
-           target="_blank"
-           class="project-link d-block">
-
-          <div class="project-card">
-            <img src="img/proyecto3.jpg" class="img-fluid" alt="Proyecto 3">
-
-            <div class="project-overlay">
-              <div class="project-info">
-                <h5>Remodelación Interior</h5>
-                <span>Espacios funcionales</span>
-              </div>
-            </div>
-          </div>
-
-        </a>
-      </div>
-
-    </div>
-
-  </div>
 </section>
 
 
 
 
-<section class="py-5 testimonios-section">
-  <div class="container">
 
-    <div class="text-center mb-5">
-      <h2 class="fw-bold">Testimonios</h2>
-      <p class="text-muted">Experiencias reales</p>
-    </div>
-
-    <div class="testimonial-scroll">
-
-      <div class="testimonial-track">
-
-        <!-- ITEM -->
-        <div class="testimonial-box">
-          <p>“El diseño aprovechó cada espacio y mejoró completamente la funcionalidad.”</p>
-          <span>Casa campestre</span>
-        </div>
-
-        <div class="testimonial-box">
-          <p>“La remodelación cambió totalmente el ambiente, ahora se siente moderno y amplio.”</p>
-          <span>Remodelación</span>
-        </div>
-
-        <div class="testimonial-box">
-          <p>“El acompañamiento fue constante y muy profesional en todo el proceso.”</p>
-          <span>Proyecto integral</span>
-        </div>
-
-        <div class="testimonial-box">
-          <p>“Los renders nos ayudaron a tomar decisiones con seguridad.”</p>
-          <span>Visualización 3D</span>
-        </div>
-
-        <!-- duplicados para loop -->
-        <div class="testimonial-box">
-          <p>“Espacios mejor pensados y funcionales.”</p>
-          <span>Vivienda urbana</span>
-        </div>
-
-        <div class="testimonial-box">
-          <p>“Resultados incluso mejores de lo esperado.”</p>
-          <span>Residencial</span>
-        </div>
-
-      </div>
+<!-------------------------------------------------------- TEXTO QUE SE MUEVE ------------------------------------------>
+<div class="ticker-atobon-soft">
+    <div class="ticker-wrapper">
+        <div class="ticker-item">Diseño - Arquitectura & Construcción en Villavicencio, Meta</div>
+        <div class="ticker-item">
+          "Nos inspira diseñar, transformar y construir ambientes únicos, llevando tus ideas a la realidad.
+        "</div>
+           <div class="ticker-item">Diseño - Arquitectura & Construcción en Villavicencio, Meta</div>
+        <div class="ticker-item">
+          "Nos inspira diseñar, transformar y construir ambientes únicos, llevando tus ideas a la realidad.
+        "</div>
+        
 
     </div>
-
-  </div>
-</section>
-
-<footer class="footer-luxury-dark">
-    <div class="footer-texture-overlay"></div>
-    <div class="container-footer">
-        <div class="footer-top-row">
-            <div class="footer-brand-info">
-                <img src="img/logo_atobon.png" alt="Ana Tobón" class="footer-logo-premium">
-                <p class="footer-slogan">Diseño - Arquitectura - Construcción</p>
-            </div>
-            <div class="footer-trust-badges">
-                <span class="tiny-label-bold">RESPALDO Y MEDIOS DE PAGO</span>
-                <div class="badge-grid-visible">
-                    <img src="svg/bbva.svg" alt="BBVA" class="badge-icon">
-                    <img src="svg/nequi.svg" alt="Nequi" class="badge-icon">
-                    <img src="svg/banco_occidente.svg" alt="Banco Occidente" class="badge-icon">
-                    <img src="svg/daviplata.svg" alt="Daviplata" class="badge-icon">
-                </div>
-            </div>
-        </div>
-        <div class="footer-main-separator"></div>
-        <div class="footer-columns">
-            <div class="f-col">
-                <h3>Explorar</h3>
-                <nav>
-                    <a href="nosotros.html">El Estudio</a>
-                    <a href="proyectos.html">Portafolio</a>
-                    <a href="servicios.html">Servicios BIM</a>
-                    <a href="contacto.html">Agendar Cita</a>
-                </nav>
-            </div>
-            <div class="f-col">
-                <h3>Legal</h3>
-                <nav>
-                    <a href="#">Términos y Condiciones</a>
-                    <a href="#">Privacidad de Datos</a>
-                    <a href="#">Ética Profesional</a>
-                </nav>
-            </div>
-            <div class="f-col">
-                <h3>Conecta</h3>
-                <div class="social-pills">
-                    <a href="#" class="social-link">Instagram</a>
-                    <a href="#" class="social-link">LinkedIn</a>
-                    <a href="https://wa.me/573118354108" class="social-link">WhatsApp</a>
-                </div>
-            </div>
-            <div class="f-col f-newsletter">
-                <h3>Newsletter</h3>
-                <p>Recibe los últimos renders y avances de obra en tu correo.</p>
-                <form class="luxury-form">
-                    <input type="email" placeholder="Email institucional" required>
-                    <button type="submit">Suscripción →</button>
-                </form>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="copy-line"></div>
-            <p>© 2026 ANAMARIA TOBÓN. Todos los derechos reservados.</p>
-        </div>
-    </div>
-</footer>
-
-<!-- Botón WhatsApp -->
-<div class="wa-float-container">
-    <a href="https://wa.me/573118354108" target="_blank" class="wa-main-btn" aria-label="WhatsApp">
-        <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M12.031 6.172c-2.277 0-4.156 1.886-4.156 4.192 0 .626.143 1.21.397 1.737L7.332 15l2.997-.881c.51.298 1.1.472 1.702.472 2.277 0 4.156-1.886 4.156-4.192 0-2.306-1.879-4.192-4.156-4.192zm2.147 5.927c-.092.257-.542.506-.75.545-.208.04-.413.063-.71-.035-.3-.098-.71-.241-1.25-.494-.46-.217-.85-.504-1.18-.85-.33-.346-.57-.753-.71-1.21-.14-.457-.1-.857.11-1.114.16-.195.34-.236.46-.236.12 0 .23 0 .33.01.11.01.25.013.38.33.14.34.47 1.156.51 1.235.04.08.06.173.01.27-.05.1-.11.205-.16.27-.06.066-.11.132-.16.19-.06.057-.12.12-.05.234.07.115.31.512.67.834.45.41.83.54 1.01.62.18.08.28.068.39-.057.11-.125.46-.534.59-.716.12-.18.25-.15.42-.086.17.064 1.08.51 1.27.6.19.09.31.14.36.21.05.07.05.41-.05.67zM12 2C6.477 2 2 6.477 2 12c0 1.891.528 3.654 1.45 5.16L2 22l4.98-1.394C8.428 21.516 10.136 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
-    </a>
 </div>
 
+
+<!---------------------------------------------------SOBRE NOSOTORS ------------------------------------------>
+<section class="about">
+    <div class="about-container">
+        <div class="about-text">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>
+                ATOBÓN Diseño Arquitectura y Construcción se dedica al desarrollo de soluciones integrales en arquitectura, diseño estructural y construcción de obras civiles, uniendo creatividad, técnica y funcionalidad. <BR> Nuestro compromiso es transformar ideas en espacios sólidos, modernos y estéticamente equilibrados, garantizando calidad, seguridad y excelencia en cada proyecto </BR>
+            </p>
+        </div>
+        <div class="about-img">
+            <img src="img/luxury.webp" alt="">
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<!---------------------------------------------------LALMADO ------------------------------------------>
+<section class="cta-mini-luxe">
+    <div class="cta-wrapper">
+        <div class="at-brand-mark">AT</div>
+        <div class="cta-copy">
+            <h2>Asesoría especializada por profesionales con enfoque innovador.</h2>
+            <p>Acompañamiento diseño y obra civil, desde la idea hasta la ejecución.</p>
+        </div>
+        <a href="https://wa.me/+573118354108" class="btn-at-mini">SOLICITAR ASESORIA</a>
+    </div>
+</section>
+
+<!--------------------------------------------------- footer ------------------------------------------------------->
+<footer class="footer">
+
+    <div class="footer-top">
+
+        <!-- LOGO -->
+        <div class="col brand">
+            <img src="img/logo_atobon.png" alt="ATOBÓN Logo" class="footer-logo">
+            <p>
+                Arquitectura y construcción con enfoque contemporáneo, diseño minimalista y precisión técnica.
+            </p>
+
+            <!-- REDES -->
+            <div class="icon-row">
+                <a href="https://www.instagram.com/_anatobon/"><i class="bi bi-instagram"></i></a>
+                <a href="https://wa.me/573118354108?text=Hola,%20quiero%20pagar%20por%20Nequi"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://wa.me/573118354108?text=Hola,%20quiero%20pagar%20por%20Nequi"><i class="bi bi-facebook"></i></a>
+                <a href="https://wa.me/573118354108?text=Hola,%20quiero%20pagar%20por%20Nequi"><i class="bi bi-envelope"></i></a>
+            </div>
+        </div>
+
+        <!-- SERVICIOS -->
+        <div class="col">
+            <h4>Servicios</h4>
+            <a href="#">Levantamiento arquitectónico</a>
+            <a href="#">Diseño de interiores</a>
+            <a href="#">Estructuras metálicas</a>
+            <a href="#">Planos estructurales</a>
+        </div>
+
+        <!-- CONTACTO -->
+        <div class="col">
+            <h4>Contacto</h4>
+            <p><i class="bi bi-geo-alt"></i> Villavicencio - Colombia</p>
+            <p><i class="bi bi-telephone"></i> +57 3118354108</p>
+            <p><i class="bi bi-envelope"></i> atobonr90@gmail.com</p>
+        </div>
+
+        <!-- MEDIOS DE PAGO -->
+        <div class="col">
+            <h4>Medios de Pago</h4>
+
+            <div class="payments-row">
+
+    <a href="https://wa.me/573118354108?text=Hola,%20quiero%20pagar%20por%20Nequi" target="_blank" class="pay-link">
+        <div class="pay-item">
+            <i class="bi bi-credit-card"></i>
+            <span>VISA</span>
+        </div>
+    </a>
+
+    <a href="https://wa.me/573118354108?text=Hola,%20quiero%20pagar%20por%20Nequi" target="_blank" class="pay-link">
+        <div class="pay-item">
+            <i class="bi bi-credit-card-2-front"></i>
+            <span>MASTER</span>
+        </div>
+    </a>
+
+    <a href="https://wa.me/573118354108?text=Hola,%20quiero%20pagar%20por%20Nequi" target="_blank" class="pay-link">
+        <div class="pay-item">
+            <i class="bi bi-phone"></i>
+            <span>NEQUI</span>
+        </div>
+    </a>
+
+    <a href="https://wa.me/573118354108?text=Hola,%20quiero%20pagar%20por%20Daviplata" target="_blank" class="pay-link">
+        <div class="pay-item">
+            <i class="bi bi-wallet2"></i>
+            <span>DAVIPLATA</span>
+        </div>
+    </a>
+
+</div>
+
+            <p class="small">Pagos seguros y verificados en Colombia</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 ATOBÓN Arquitectura · Diseño con elegancia y precisión</p>
+    </div>
+
+</footer>
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    const btn = document.querySelector(".menu-toggle");
-    const menu = document.querySelector(".nav-links");
-
-    if (btn && menu) {
-        btn.onclick = function() {
-            menu.classList.toggle("active");
-            btn.innerHTML = menu.classList.contains("active") ? "✕" : "☰";
-        };
-
-        document.querySelectorAll(".nav-links a").forEach(n => n.addEventListener("click", () => {
-            menu.classList.remove("active");
-            btn.innerHTML = "☰";
-        }));
-    }
-});
-</script>
-    <section class="py-5 testimonios-section">
 </body>
 </html>
+
+
