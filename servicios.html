@@ -1,215 +1,284 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- ✅ Bootstrap CSS VA AQUÍ -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Ana Tobón | Arquitectura & Construcción</title>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Montserrat:wght@300;700;800&display=swap" rel="stylesheet">
+    <title>ATOBÓN | Arquitectura & Construcción</title>
+
+    <!-- Fuente -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
+
 <body>
 
-    <div id="progress-container">
-        <div id="progress-bar"></div>
-    </div>
-<nav class="header-main">
-    <div class="header-container">
-        <div class="brand-logo">
-            <img src="IMG/IMG/logo_atobon.png" alt="TOBÓN">
-        </div>
+<!------------------------------------------- NAV ------------------------------------------------------------------->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="#" class="logo-link">
+            <img src="img/logo_atobon.png" alt="ATOBÓN" class="logo-img">
+        </a>
         
-        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+        <input type="checkbox" id="nav-check">
+        <label for="nav-check" class="nav-btn">
+            <span></span>
+            <span></span>
+        </label>
         
-        <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li> 
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="proyectos.html">Proyectos</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li class="nav-cta"><a href="contacto.html">Contacto</a></li>
+          <ul class="nav-links">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="nosotros.html">NOSOTROS</a></li>
+            <li><a href="servicios.html">SERVICIOS</a></li>
+             <li><a href="proyectos.html">PROYECTOS</a></li>
+            <li><a href="contacto.html"btn-contacto">CONTACTO</a></li>
         </ul>
     </div>
 </nav>
 
-    
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ana Tobón | Arquitectura & Construcción</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&family=Outfit:wght@300;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
 
 
 
 
 
+<!----------------------------------------------------HERO----------- ------------------------------------------>
+<section class="hero-arq">
 
-    
+    <div class="hero-overlay">
 
+        <div class="hero-content">
 
-<section class="atobon-servicios-alternos">
-    <div class="atobon-container">
-        
-        <article class="atobon-row">
-            <div class="atobon-media">
-                <img src="IMG/IMG/diseño_arquitectonico.jpg" alt="Diseño Arquitectónico">
+            <span class="hero-tag">ARQUITECTURA • DISEÑO • CONSTRUCCIÓN</span>
+
+            <h1>
+                Diseñamos espacios<br>
+                con intención y precisión
+            </h1>
+
+            <p>
+                Creamos proyectos arquitectónicos funcionales, estéticos y duraderos,
+                desde la idea hasta la ejecución.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="https://wa.link/9qjmje" class="btn-primary">Ver servicios</a>
+                <a href="https://wa.link/9qjmje" class="btn-secondary">Contactar</a>
             </div>
-            <div class="atobon-info">
-                <span class="atobon-tag-num">01 / DISEÑO</span>
-                <h3 class="atobon-title-pro">Diseño <br><strong>Arquitectónico</strong></h3>
-                <div class="atobon-line-accent"></div>
-                <ul class="atobon-details-list">
-                    <li>Modelado 3D avanzado y Renders (Enscape).</li>
-                    <li>Mobiliario modular y hábitats boutique.</li>
-                    <li>Interiorismo minimalista sofisticado.</li>
-                </ul>
-                <a href="#" class="atobon-btn-pill">Saber Más</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+<!----------------------------- SECCIÓN OPTIMIZADA PARA SEO - ATOBÓN ARQUITECTURA------------------------------ -->
+<section class="atobon-premium" aria-labelledby="atobon-title">
+    
+    <header class="atobon-header">
+        <!-- H1 con palabra clave principal para buscadores -->
+        <h1 id="atobon-title" class="atobon-name">ATOBÓN</h1>
+        <p class="atobon-subtitle">Arquitectura y Construcción en Villavicencio</p>
+    </header>
+
+    <div class="atobon-grid">
+        <!-- SEO: Uso de Article para definir servicios independientes -->
+        <article class="atobon-col">
+            <div class="atobon-line">
+                <i class="bi bi-pencil-ruler" aria-hidden="true"></i>
+                <h2>DISEÑO ARQUITECTÓNICO</h2>
             </div>
+            <ul class="atobon-list">
+                <li>Arquitectura Minimalista y Lujosa</li>
+                <li>Diseño Urbano y Paisajismo</li>
+                <li>Modelado BIM y Recorridos 3D</li>
+                <li>Remodelaciones Profesionales</li>
+            </ul>
         </article>
 
-        <article class="atobon-row atobon-reverse">
-            <div class="atobon-media">
-                <img src="IMG/IMG/estructura.jpg" alt="Arquitectura Técnica">
+        <article class="atobon-col">
+            <div class="atobon-line">
+                <i class="bi bi-buildings" aria-hidden="true"></i>
+                <h2>CONSTRUCCIÓN Y OBRAS</h2>
             </div>
-            <div class="atobon-info">
-                <span class="atobon-tag-num">02 / TÉCNICO</span>
-                <h3 class="atobon-title-pro">Arquitectura <br><strong>Técnica</strong></h3>
-                <div class="atobon-line-accent"></div>
-                <ul class="atobon-details-list">
-                    <li>Metodología BIM integral (Revit).</li>
-                    <li>Cálculo de detalles estructurales IPE.</li>
-                    <li>Gestión de licencias y normativa.</li>
-                </ul>
-                <a href="#" class="atobon-btn-pill">Ver Detalles</a>
-            </div>
+            <ul class="atobon-list">
+                <li>Ejecución de Obras Civiles en Meta</li>
+                <li>Ampliaciones y Reformas de Lujo</li>
+                <li>Adecuaciones de Espacios Comerciales</li>
+                <li>Carpintería Arquitectónica</li>
+            </ul>
         </article>
 
-        <article class="atobon-row">
-            <div class="atobon-media">
-                <img src="IMG/IMG/planos.jpg" alt="Construcción">
+        <article class="atobon-col">
+            <div class="atobon-line">
+                <i class="bi bi-gear-wide-connected" aria-hidden="true"></i>
+                <h2>INGENIERÍA CIVIL</h2>
             </div>
-            <div class="atobon-info">
-                <span class="atobon-tag-num">03 / EJECUCIÓN</span>
-                <h3 class="atobon-title-pro">Construcción <br><strong>& Ejecución</strong></h3>
-                <div class="atobon-line-accent"></div>
-                <ul class="atobon-details-list">
-                    <li>Gerencia de obra y bitácoras técnicas.</li>
-                    <li>Ejecución estructural de niveles.</li>
-                    <li>Interventoría y administración.</li>
-                </ul>
-                <a href="#" class="atobon-btn-pill">Iniciar Obra</a>
-            </div>
+            <ul class="atobon-list">
+                <li>Cálculo Estructural (NSR-10)</li>
+                <li>Estudios de Suelos y Cimentaciones</li>
+                <li>Diseños Eléctricos e Hidráulicos</li>
+                <li>Sistemas HVAC y Climatización</li>
+            </ul>
         </article>
+    </div>
 
+
+<!---------------------------------------------- SECCIÓN TECNOLOGÍA BIM ------------------------------------------------->
+<section class="bim-section-atobon">
+    <div class="bim-container">
+        <div class="bim-title-block">
+            <h2 class="bim-big-text">BIM</h2>
+            <div class="bim-label">
+                <span>Building</span>
+                <span>Information</span>
+                <span class="highlight-red">Modeling</span>
+            </div>
+        </div>
+        <div class="bim-content-block">
+            <div class="red-divider"></div>
+            <p class="bim-description">
+                En <strong>ATOBÓN</strong> contamos con <strong>Tecnología BIM</strong> que incrementa las mejoras en el resultado de los proyectos y la eficacia en los procesos.
+            </p>
+        </div>
+    </div>
+    <div class="watermark-at">AT</div>
+</section>
+
+
+<!----------------------------------------------BOTON DE LLAMADO ------------------------------------------------->
+</div> 
+
+<section class="cta-atobon-luxury-final">
+    <div class="cta-luxury-container">
+        <div class="cta-luxury-text">
+            <span class="at-brand-mark">AT</span>
+            <h2>Asesoría especializada por profesionales con enfoque innovador.</h2>
+            <p>Acompañamiento diseño y obra civil, desde la idea hasta la ejecución.</p>
+        </div>
+
+        <div class="cta-luxury-action">
+            <div class="btn-wrap">
+                <span class="btn-luxe-tag">QUIERO</span>
+                <a href="https://wa.me/573118354108" class="btn-at-luxury">ASESORARME</a>
+            </div>
+        </div>
     </div>
 </section>
 
-    
+<div class="container">
+
+<!--------------------------------------------------- footer ------------------------------------------------------->
 
 
-   <footer class="footer-luxury-dark">
-    <div class="footer-texture-overlay"></div>
 
-    <div class="container-footer">
-        <div class="footer-top-row">
-            <div class="footer-brand-info">
-                <img src="IMG/IMG/logo_atobon.png"Ana Tobón" class="footer-logo-premium">
-                <p class="footer-slogan">Diseño - Arquitectura - Construcción</p>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+<!--------------------------------------------------- footer ------------------------------------------------------->
+<footer class="footer">
+
+    <div class="footer-top">
+
+        <!-- LOGO -->
+        <div class="col brand">
+            <img src="img/logo_atobon.png" alt="ATOBÓN Logo" class="footer-logo">
+            <p>
+                Arquitectura y construcción con enfoque contemporáneo, diseño minimalista y precisión técnica.
+            </p>
+
+            <!-- REDES -->
+            <div class="icon-row">
+                <a href="https://www.instagram.com/_anatobon/"><i class="bi bi-instagram"></i></a>
+                <a href="https://wa.me/573118354108?text=Hola,%20quiero%20pagar%20por%20Nequi"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://wa.me/573118354108?text=Hola,%20quiero%20pagar%20por%20Nequi"><i class="bi bi-facebook"></i></a>
+                <a href="https://wa.me/573118354108?text=Hola,%20quiero%20pagar%20por%20Nequi"><i class="bi bi-envelope"></i></a>
             </div>
-            <div class="footer-trust-badges">
-    <span class="tiny-label-bold">RESPALDO Y MEDIOS DE PAGO</span>
-  <div class="badge-grid-visible">
-    <img src="SVG/bbva.svg" alt="Visa" class="badge-icon">
-    <img src="SVG/nequi.svg" alt="Mastercard" class="badge-icon">
-    <img src="SVG/banco_occidente.svg" alt="Banco Occidente" class="badge-icon">
-    <img src="SVG/daviplata.svg" alt="Bancolombia" class="badge-icon">
+        </div>
+
+        <!-- SERVICIOS -->
+        <div class="col">
+            <h4>Servicios</h4>
+            <a href="#">Levantamiento arquitectónico</a>
+            <a href="#">Diseño de interiores</a>
+            <a href="#">Estructuras metálicas</a>
+            <a href="#">Planos estructurales</a>
+        </div>
+
+        <!-- CONTACTO -->
+        <div class="col">
+            <h4>Contacto</h4>
+            <p><i class="bi bi-geo-alt"></i> Villavicencio - Colombia</p>
+            <p><i class="bi bi-telephone"></i> +57 3118354108</p>
+            <p><i class="bi bi-envelope"></i> atobonr90@gmail.com</p>
+        </div>
+
+        <!-- MEDIOS DE PAGO -->
+        <div class="col">
+            <h4>Medios de Pago</h4>
+
+            <div class="payments-row">
+
+    <a href="https://wa.me/573118354108?text=Hola,%20quiero%20pagar%20por%20Nequi" target="_blank" class="pay-link">
+        <div class="pay-item">
+            <i class="bi bi-credit-card"></i>
+            <span>VISA</span>
+        </div>
+    </a>
+
+    <a href="https://wa.me/573118354108?text=Hola,%20quiero%20pagar%20por%20Nequi" target="_blank" class="pay-link">
+        <div class="pay-item">
+            <i class="bi bi-credit-card-2-front"></i>
+            <span>MASTER</span>
+        </div>
+    </a>
+
+    <a href="https://wa.me/573118354108?text=Hola,%20quiero%20pagar%20por%20Nequi" target="_blank" class="pay-link">
+        <div class="pay-item">
+            <i class="bi bi-phone"></i>
+            <span>NEQUI</span>
+        </div>
+    </a>
+
+    <a href="https://wa.me/573118354108?text=Hola,%20quiero%20pagar%20por%20Daviplata" target="_blank" class="pay-link">
+        <div class="pay-item">
+            <i class="bi bi-wallet2"></i>
+            <span>DAVIPLATA</span>
+        </div>
+    </a>
+
 </div>
-</div>
+
+            <p class="small">Pagos seguros y verificados en Colombia</p>
         </div>
 
-        <div class="footer-main-separator"></div>
-
-        <div class="footer-columns">
-            <div class="f-col">
-                <h3>Explorar</h3>
-                <nav>
-                    <a href="nosotros.html">El Estudio</a>
-                    <a href="proyectos.html">Portafolio</a>
-                    <a href="servicios.html">Servicios BIM</a>
-                    <a href="contacto.html">Agendar Cita</a>
-                </nav>
-            </div>
-
-            <div class="f-col">
-                <h3>Legal</h3>
-                <nav>
-                    <a href="#">Términos y Condiciones</a>
-                    <a href="#">Privacidad de Datos</a>
-                    <a href="#">Ética Profesional</a>
-                </nav>
-            </div>
-
-            <div class="f-col">
-                <h3>Conecta</h3>
-                <div class="social-pills">
-                    <a href="#" class="social-link">Instagram</a>
-                    <a href="#" class="social-link">LinkedIn</a>
-                    <a href="#" class="social-link">WhatsApp</a>
-                </div>
-            </div>
-
-            <div class="f-col f-newsletter">
-                <h3>Newsletter</h3>
-                <p>Recibe los últimos renders y avances de obra en tu correo.</p>
-                <form class="luxury-form">
-                    <input type="email" placeholder="Email institucional">
-                    <button type="submit">Suscripción →</button>
-                </form>
-            </div>
-        </div>
-
-        <div class="footer-copyright">
-            <div class="copy-line"></div>
-            <p>© 2026 ANA TOBÓN Arquitectura & Construcción. Todos los derechos reservados.</p>
-        </div>
     </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 ATOBÓN Arquitectura · Diseño con elegancia y precisión</p>
+    </div>
+
 </footer>
 
-<div class="wa-float-container">
-    <a href="https://wa.me/573118354108" target="_blank" class="wa-main-btn">
-        <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M12.031 6.172c-2.277 0-4.156 1.886-4.156 4.192 0 .626.143 1.21.397 1.737L7.332 15l2.997-.881c.51.298 1.1.472 1.702.472 2.277 0 4.156-1.886 4.156-4.192 0-2.306-1.879-4.192-4.156-4.192zm2.147 5.927c-.092.257-.542.506-.75.545-.208.04-.413.063-.71-.035-.3-.098-.71-.241-1.25-.494-.46-.217-.85-.504-1.18-.85-.33-.346-.57-.753-.71-1.21-.14-.457-.1-.857.11-1.114.16-.195.34-.236.46-.236.12 0 .23 0 .33.01.11.01.25.013.38.33.14.34.47 1.156.51 1.235.04.08.06.173.01.27-.05.1-.11.205-.16.27-.06.066-.11.132-.16.19-.06.057-.12.12-.05.234.07.115.31.512.67.834.45.41.83.54 1.01.62.18.08.28.068.39-.057.11-.125.46-.534.59-.716.12-.18.25-.15.42-.086.17.064 1.08.51 1.27.6.19.09.31.14.36.21.05.07.05.41-.05.67zM12 2C6.477 2 2 6.477 2 12c0 1.891.528 3.654 1.45 5.16L2 22l4.98-1.394C8.428 21.516 10.136 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
-    </a>
-</div>  
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    const btn = document.querySelector(".menu-toggle");
-    const menu = document.querySelector(".nav-links");
-
-    if (btn && menu) {
-        btn.onclick = function() {
-            menu.classList.toggle("active");
-            // Cambia el icono de ☰ a ✕
-            btn.innerHTML = menu.classList.contains("active") ? "✕" : "☰";
-        };
-
-        // Si hacen clic en un link, cerramos el menú automáticamente
-        document.querySelectorAll(".nav-links a").forEach(n => n.addEventListener("click", () => {
-            menu.classList.remove("active");
-            btn.innerHTML = "☰";
-        }));
-    }
-});
-</script>
-    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
+
+
