@@ -7,7 +7,8 @@
     <title>ATOBÓN | Arquitectura & Construcción</title>
 
     <!-- Fuente -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
      <!-- BOOTSTRAP CSS (IMPORTANTE PARA CARRUSEL) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -40,7 +41,6 @@
         
         <ul class="nav-links">
             <li><a href="index.html">INICIO</a></li>
-            <li><a href="nosotros.html">NOSOTROS</a></li>
             <li><a href="servicios.html">SERVICIOS</a></li>
             <li><a href="proyectos.html">PROYECTOS</a></li>
             <li><a href="contacto.html"btn-contacto">CONTACTO</a></li>
@@ -50,33 +50,44 @@
 
 
 
-<!-- HERO SECTION CON IMAGEN DE FONDO -->
+<!-------------------------------------- HERO SECTION CON IMAGEN DE FONDO ------------------------------------->
 
-<section class="at-projects-hero">
-    <div class="at-hero-container">
-        <div class="at-hero-info">
-            <span class="at-label">PORTFOLIO EXCLUSIVO</span>
-            <h1 class="at-main-title">Nuestros <br>Proyectos</h1>
-            <div class="at-line"></div>
-            <p class="at-description">Explora nuestra selección de proyectos, donde el diseño moderno se une con espacios funcionales y elegantes.</p>
+<section class="atb-hero-minimal">
+    <div class="atb-hero-overlay-container">
+        <img src="img/casa.webp" alt="Vivienda Moderna" class="atb-hero-media">
+    </div>
+
+    <div class="atb-hero-content">
+        <span class="atb-eyebrow-red">Proyectos de Autor</span>
+        
+        <h1 class="atb-main-headline">
+            <span class="atb-thin">Diseños que fusionan</span> <br>
+            <span class="atb-bold">LO RURAL Y LO SOFISTICADO</span>
+        </h1>
+
+        <div class="atb-specs-bar">
+            <div class="atb-spec-item">
+                <span class="atb-dot-center"></span>
+                <p class="atb-text-clean">Hábitats Modulares & Boutique</p>
+            </div>
             
-            <div class="at-hero-controls">
-                <button class="at-ctrl-btn"><i class="bi bi-arrow-left"></i></button>
-                <button class="at-ctrl-btn"><i class="bi bi-arrow-right"></i></button>
+            <div class="atb-divider-vertical"></div>
+            
+            <div class="atb-spec-item">
+                <p class="atb-text-clean">Villavicencio, Meta</p>
             </div>
         </div>
+<!-- Debajo de .atb-specs-bar -->
+<div class="atb-hero-action">
+    <a href="#proyectos" class="atb-btn-square">
+        <span class="atb-btn-text">Ver Proyectos</span>
+        <i class="bi bi-arrow-right-short atb-btn-icon"></i>
+    </a>
+</div>
 
-        <div class="at-hero-visual">
-            <div class="at-main-image-wrap">
-                <img src="img/luxury.webp" alt="Proyecto Atobón" class="at-img-fluid">
-                <div class="at-floating-tag">
-                    <h3>Residencia El Peñon</h3>
-                    <p>2024</p>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
+
 
 
 <!--------------------------------------------------SECCIÓN DE PROYECTOS--------------------------------------------------->
@@ -90,11 +101,11 @@
             <!-- Proyecto 1 -->
             <article class="project-card">
                 <div class="project-image">
-                    <img src="img/casa_02.webp" alt="Residencia Contemporánea">
+                    <img src="img/loteo.webp" alt="Residencia Contemporánea">
                 </div>
                 <div class="project-info">
-                    <h3>Residencia Las Mercedes</h3>
-                    <span>Arquitectura & Construcción</span>
+                    <h3>Avonlea Eco Luxury</h3>
+                    <span>Mesetas, Meta</span>
                 </div>
             </article>
 
@@ -126,8 +137,8 @@
                     <img src="img/casa_sanda.webp" alt="Obra Civil">
                 </div>
                 <div class="project-info">
-                    <h3>Edificio Atobón</h3>
-                    <span>Estructuras</span>
+                    <h3>Vivienda Unifamiliar</h3>
+                    <span>Villavicencio, Meta</span>
                 </div>
             </article>
 
@@ -158,153 +169,306 @@
     </main>
 
 
+ <!------------------------------------------ PREGUNTAS FRECUENTES---------------------------------------------------->
 
+<!-- =====================================
+        PREGUNTAS FRECUENTES PREMIUM
+===================================== -->
 
+<section class="faq-section">
 
+    <div class="faq-title">
 
+        <span>ATOBÓN STUDIO</span>
 
+        <h2>
+            Preguntas frecuentes
+        </h2>
 
+        <p>
+            Conoce más sobre nuestros servicios de diseño
+            arquitectónico, planos, construcción y medios
+            de pago disponibles.
+        </p>
 
-<section class="at-cta-vanguardia">
-    <div class="at-cta-inner">
-        <span class="at-cta-tag">PROYECTA TU VISIÓN</span>
-        <h2 class="at-cta-title">¿Damos el primer paso técnico?</h2>
-        
-        <div class="at-btn-container">
-            <a href="https://wa.me/573118354108" class="at-btn-magnetic">
-                <span class="at-btn-text">INICIAR CONVERSACIÓN</span>
-                <div class="at-btn-blob"></div> <div class="at-btn-border"></div> </a>
-        </div>
     </div>
+
+    <div class="faq-container">
+
+        <!-- ITEM -->
+        <div class="faq-item active">
+
+            <button class="faq-question">
+
+                ¿Qué incluye un diseño arquitectónico completo?
+
+                <span>+</span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    Nuestro servicio incluye distribución
+                    arquitectónica, plantas, cortes, fachadas,
+                    modelado conceptual, detalles técnicos y
+                    asesoría personalizada para desarrollar
+                    espacios modernos, funcionales y estéticamente
+                    equilibrados según las necesidades del cliente.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- ITEM -->
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                ¿También realizan planos estructurales?
+
+                <span>+</span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    Sí. Desarrollamos planos estructurales
+                    profesionales enfocados en estabilidad,
+                    seguridad y cumplimiento técnico para
+                    garantizar construcciones funcionales
+                    y duraderas.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- ITEM -->
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                ¿Los proyectos son personalizados?
+
+                <span>+</span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    Cada proyecto se diseña completamente
+                    personalizado de acuerdo con el estilo,
+                    necesidades, presupuesto y objetivos
+                    arquitectónicos de cada cliente.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- ITEM -->
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                ¿Realizan construcción además del diseño?
+
+                <span>+</span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    Sí. Además del desarrollo arquitectónico,
+                    ofrecemos acompañamiento y ejecución
+                    constructiva manteniendo la calidad,
+                    estética y concepto planteado desde
+                    el diseño inicial.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- ITEM -->
+        <div class="faq-item">
+
+            <button class="faq-question">
+
+                ¿Qué medios de pago manejan?
+
+                <span>+</span>
+
+            </button>
+
+            <div class="faq-answer">
+
+                <p>
+                    Actualmente recibimos pagos mediante
+                    transferencia bancaria, Nequi y Daviplata,
+                    ofreciendo procesos rápidos, seguros y
+                    cómodos para nuestros clientes.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
-
-
-
-
-
-
-
-<!-------------------------------------------------------------------------------------------------------->
-<section class="at-process-section">
-    <div class="at-process-wrapper">
-        <div class="at-process-header">
-            <span class="at-tag">METODOLOGÍA</span>
-            <h2>El Camino a la Perfección</h2>
-        </div>
-
-        <div class="at-process-steps">
-            <div class="at-step">
-                <div class="at-step-number">01</div>
-                <div class="at-step-content">
-                    <h3>Conceptualización</h3>
-                    <p>Traducimos tus ideas en formas geométricas y funcionales, priorizando la estética minimalista.</p>
-                </div>
-            </div>
-
-            <div class="at-step">
-                <div class="at-step-number">02</div>
-                <div class="at-step-content">
-                    <h3>Simulación BIM</h3>
-                    <p>Creamos un gemelo digital del proyecto para anticipar cada detalle técnico antes de la obra.</p>
-                </div>
-            </div>
-
-            <div class="at-step">
-                <div class="at-step-number">03</div>
-                <div class="at-step-content">
-                    <h3>Ejecución de Obra</h3>
-                    <p>Construcción con precisión milimétrica, bajo los estándares más altos de ingeniería civil.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 
 <!--------------------------------------------------- footer ------------------------------------------------------->
+<!-- FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
-<footer class="footer">
+<footer class="footer-premium">
 
-    <div class="footer-top">
+    <div class="footer-container">
 
         <!-- LOGO -->
-        <div class="col brand">
-            <img src="img/logo_atobon.png" alt="ATOBÓN Logo" class="footer-logo">
+        <div class="footer-col footer-brand">
+
+            <!-- TU LOGO -->
+            <img src="img/logo_atobon.png" alt="ATOBÓN" class="footer-logo">
+
             <p>
-                Arquitectura y construcción con enfoque contemporáneo, diseño minimalista y precisión técnica.
+                Diseñamos espacios arquitectónicos exclusivos,
+                modernos y funcionales con acabados premium.
             </p>
 
             <!-- REDES -->
-            <div class="icon-row">
-                <a href="https://www.instagram.com/_anatobon/"><i class="bi bi-instagram"></i></a>
-                <a href="https://wa.me/573118354108?text=Hola,%20quiero%20pagar%20por%20Nequi"><i class="bi bi-whatsapp"></i></a>
-                <a href="https://wa.me/573118354108?text=Hola,%20quiero%20pagar%20por%20Nequi"><i class="bi bi-facebook"></i></a>
-                <a href="https://wa.me/573118354108?text=Hola,%20quiero%20pagar%20por%20Nequi"><i class="bi bi-envelope"></i></a>
+            <div class="socials">
+
+                <a href="https://www.instagram.com/_anatobon/" class="instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://www.facebook.com/TOBON.Arquitectura.Construccion" class="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.tiktok.com/@_anatobon" class="tiktok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/anamaria-tobon-067973184/" class="linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
             </div>
+
         </div>
 
-        <!-- SERVICIOS -->
-        <div class="col">
-            <h4>Servicios</h4>
-            <a href="#">Levantamiento arquitectónico</a>
-            <a href="#">Diseño de interiores</a>
-            <a href="#">Estructuras metálicas</a>
-            <a href="#">Planos estructurales</a>
+        <!-- ESPECIALIDADES -->
+        <div class="footer-col">
+
+            <h3>ESPECIALIDADES</h3>
+
+            <ul>
+                <li><a href="#">Diseño Arquitectónico</a></li>
+                <li><a href="#">Diseño Estructural</a></li>
+                <li><a href="#">Interiorismo</a></li>
+                <li><a href="#">Construcción NSR-10</a></li>
+            </ul>
+
+        </div>
+
+        <!-- MAPA -->
+        <div class="footer-col">
+
+            <h3>MAPA SITIO</h3>
+
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+            </ul>
+
         </div>
 
         <!-- CONTACTO -->
-        <div class="col">
-            <h4>Contacto</h4>
-            <p><i class="bi bi-geo-alt"></i> Villavicencio - Colombia</p>
-            <p><i class="bi bi-telephone"></i> +57 3118354108</p>
-            <p><i class="bi bi-envelope"></i> atobonr90@gmail.com</p>
-        </div>
+        <div class="footer-col">
 
-        <!-- MEDIOS DE PAGO -->
-        <div class="col">
-            <h4>Medios de Pago</h4>
+            <h3>CONTACTO</h3>
 
-            <div class="payments-row">
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Villavicencio, Meta
+            </p>
 
-    <a href="https://wa.me/573118354108?text=Hola,%20quiero%20pagar%20por%20Nequi" target="_blank" class="pay-link">
-        <div class="pay-item">
-            <i class="bi bi-credit-card"></i>
-            <span>VISA</span>
-        </div>
-    </a>
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                tobon.arq@gmail.com
+            </p>
 
-    <a href="https://wa.me/573118354108?text=Hola,%20quiero%20pagar%20por%20Nequi" target="_blank" class="pay-link">
-        <div class="pay-item">
-            <i class="bi bi-credit-card-2-front"></i>
-            <span>MASTER</span>
-        </div>
-    </a>
+            <p>
+                <i class="0 0000fa-solid fa-phone"></i>
+                +57 311 835 41 08
+            </p>
 
-    <a href="https://wa.me/573118354108?text=Hola,%20quiero%20pagar%20por%20Nequi" target="_blank" class="pay-link">
-        <div class="pay-item">
-            <i class="bi bi-phone"></i>
-            <span>NEQUI</span>
-        </div>
-    </a>
+            <a href="https://wa.me/573118354108?text=Hola,%20quiero%20más%20información" class="btn-footer">
+                CONTACTANOS
+            </a>
 
-    <a href="https://wa.me/573118354108?text=Hola,%20quiero%20pagar%20por%20Daviplata" target="_blank" class="pay-link">
-        <div class="pay-item">
-            <i class="bi bi-wallet2"></i>
-            <span>DAVIPLATA</span>
-        </div>
-    </a>
-
-</div>
-
-            <p class="small">Pagos seguros y verificados en Colombia</p>
         </div>
 
     </div>
 
     <div class="footer-bottom">
-        <p>© 2026 ATOBÓN Arquitectura · Diseño con elegancia y precisión</p>
+        © 2026 ATOBÓN Studio — Todos los derechos reservados
     </div>
 
 </footer>
 
+
+
+
+</html>
+<script>
+
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item => {
+
+    const question = item.querySelector(".faq-question");
+
+    question.addEventListener("click", () => {
+
+        faqItems.forEach(other => {
+
+            if(other !== item){
+                other.classList.remove("active");
+            }
+
+        });
+
+        item.classList.toggle("active");
+
+    });
+
+});
+
+</script>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const items = document.querySelectorAll(".faq-item");
+
+  items.forEach(item => {
+    item.querySelector(".faq-pregunta").addEventListener("click", () => {
+      item.classList.toggle("active");
+    });
+  });
+});
+</script>
